@@ -28,8 +28,8 @@ print(n1 % n2)
 # elevar a la potencia en este caso 2 a la 3 = 8
 print(2 ** 3)
 
-# OPERACIONES POR SU MISMO VALOR
-print('OPERACIONES POR SU MISMO VALOR')
+# Operadores de asignación
+print('Operadores de asignación')
 numero = 2
 numero = numero + 2
 print(numero)

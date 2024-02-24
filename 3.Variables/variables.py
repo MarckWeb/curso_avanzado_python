@@ -1,22 +1,17 @@
-# las bvariables con sensibles en minuscula y mayuscula nombre y NOMBRE no son iguales o no es el mimso
+# las variables en python con sensibles en minuscula y mayuscula (nombre y NOMBRE ) no son iguales.
 
-# string
-NOMBRE = 'Carlos'
+# FORMA CONVENCIONAL
+nombre = 'david'
+nombre_completo = 'David marck'
 
-# number
-product = 2
-print(product)
+# OTRAS FORMAS NO CONVENCIONALES
 
-# boolen
-estado = False
+Apellido = 'marck'
+NombreYApellido = 'david marck'
+enviarSaludo = 'hola mundo'
 
-# nueva asignacion
-NOMBRE = 'Juan'
-
-print(NOMBRE)
 
 # VARIABLES CON ENTRADA DE DATOS
-
 # leer la entrada hecha desde el teclado
 nombre = input('ingresa tu nombre:')
 print(nombre)
