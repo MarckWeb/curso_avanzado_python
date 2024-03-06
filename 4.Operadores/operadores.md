@@ -62,6 +62,8 @@ a //= 10 # Equivalente a 'a = a // 10'
 
 Los operadores lógicos se utilizan para combinar declaraciones condicionales.
 
+cuando se usan todos los operadores para realizar condiciones primero se evalua el not luego el and y despues el or
+
 ```py
 a = True
 b = False
