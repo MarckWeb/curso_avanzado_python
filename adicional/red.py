@@ -98,14 +98,60 @@ print("Gracias por la informaciòn. Esperamos que disfrutes con unired")
 print()
 
 # Finalmente, solicitamos un mensaje de prueba que sirva para publicar un estado del usuario.
-mensaje = input(
-    "Ahora vamos a publicar tu primer mensaje. ¿Que estas pensando hoy? ")
-print()
-print("--------------------------------------------------")
-print(nombre, "dice:", mensaje)
-print("--------------------------------------------------")
+# mensaje = input(
+#     "Ahora vamos a publicar tu primer mensaje. ¿Que estas pensando hoy? ")
+# print()
+# print("--------------------------------------------------")
+# print(nombre, "dice:", mensaje)
+# print("--------------------------------------------------")
+# MENU
+print('Elige uan de las opciones en nuestro menu')
+print("1-. Deseo modificar mi nombre de perfil")
+print("2-. Deseo escribir un mensaje")
 
-# Ahora puedes practicar solicitando mÃ¡s datos al usuario. Solo tienes que usar apropiadamente input() y print()
-# 1. Escribe 3 solicitudes de datos al usuario, por ejemplo sexo, numero de telefono, ciudad donde vive,
-#   pais de nacimiento, direccion, etc. Guarda esos datos en variables del tipo, y finalmente escrÃ­belos en pantalla
-#   utilizando print. Puedes agregar todas las lÃ­neas que necesites.
+menu = int(input("Agreaga el numero de la opcion seleccioanda: "))
+
+if menu == 1:
+    nombre = input("Ingresa el nuevo nombre de tu perfil ")
+    print('Tu nuevo nombre de perfil es: ', nombre)
+elif menu == 2:
+    continuar = True
+    # Este ciclo se mantiene en ejecuciòn hasta que el usuario desee salir
+    while continuar:
+
+        # Solicitamos opciòn al usuario
+        escribir_mensaje = str(input("Â¿Deseas escribir un mensaje? (S/N) "))
+
+    # Vamos a aceptar que el usuario ingrese un mensaje cuando escriban "S", "s", o nada
+        if escribir_mensaje == "N" or escribir_mensaje == "n":
+            continuar = False
+    # En caso que sea otra respuesta, vamos a decidir salir.
+    # Asi­, en la siguiente iteración el ciclo terminará¡
+        else:
+            mensaje = input("Vamos a publicar un mensaje. ¿Qué piensas hoy? ")
+            print()
+            print("--------------------------------------------------")
+            print(nombre, "dice:", mensaje)
+            print("--------------------------------------------------")
+
+# Mensaje de salida, una vez que el ciclo ha terminado.
+    print("Gracias por usar UniRed. ¡Hasta pronto!")
+
+
+# Usaremos una variable bool para indicar si el usuario desea continuar
+# utilizando el programa o no
+
+
+# Ahora puedes escribir mensajes todas las veces que quieras.
+# Observa que hemos utilizado un ciclo while que permite repetir la accin de preguntar por un mensajes
+# hasta que el usuario escribe algo distino de "S".
+
+# Pero las redes sociales pueden ejecutar mÃ¡s acciones que solamente enviar mensajes.
+
+# Te proponemos los siguientes desafÃ­os:
+# 1. Este programa termina cada vez que el valor de 'escribir_mensaje' es distinto a "S" o a "s".
+#   Modifique el programa para que el programa termine UNICAMENTE cuando se ingresa "N" o "n".
+#   En caso que se ingrese algo distinto, debe volver a solicitar una opciÃ³n al usuario.
+#
+# 2. Modifica este menÃº para que le permita el usuario realizar mÃ¡s de una acciÃ³n.
+#   Por ejemplo, puedes agregar una acciÃ³n que permita al usuario modificar su nombre.
