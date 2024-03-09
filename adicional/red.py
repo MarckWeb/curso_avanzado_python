@@ -1,36 +1,3 @@
-# Hola, para empezar con nuestro proyecto de red social, vamos a utilizar
-# las herramientas que conocemos para ejecutar algunas acciones.
-#
-# Primero, mostraremos un mensaje en pantalla dando la bienvenida al usuario
-# y escribiendo el nombre de la red.
-
-# A continuaciÃ³n preguntaremos algunos datos al usuario para poder construir su perfil,
-# y guardaremos esta informaciÃ³n en variables.
-
-# Finalmente, escribiremos en pantalla todos los datos que hemos recolectado, y permitiremos
-# al usuario escribir un mensaje de estado.
-
-# Te invito a examinar el cÃ³digo, leer los comentarios y comprender los tipos de datos
-# que estamos utilizando en cada caso.
-
-
-# Para conocer un poco mÃ¡s del usuario, vamos a preguntarle algunos datos.
-# Por ejemplo, su aÃ±o de nacimiento, y aprovecharemos este dato descubrir la edad del usuario.
-# Â¿CÃ³mo lo haremos?, usaremos una variable para guardar el resultado del cÃ¡lculo de
-# la edad del usuario. Este es un dato de tipo entero.
-
-# A continuaciÃ³n le preguntaremos al usuario su estatura en metros. Este es un dato de tipo float,
-# y usaremos esta informaciÃ³n para calcular los centimetros
-
-# Finalmente escribiremos en pantalla los datos que hemos recordado del usuario usando print y le solicitaremos
-# que escriba un mensaje para desplegar en pantalla.
-
-############################################################
-# Lo primero que haremos serÃ¡ escribir un mensaje de bienvenida al usuario
-# con el nombre de la red. Puedes modificar este mensajes para que represente el nombre de tu propia red
-# Considera que al escribir """ tambiÃ©n estamos delimitado un string, pero al hacerlo de esta manera,
-# cambios de lÃ­nea que ocurran en el cÃ³digo se considerarÃ¡n como parte del string.
-# Si no estÃ¡s convencido, prueba el funcionamiento reemplazando los delimitadores por "
 
 print("Bienvenido a ... ")
 print("""
@@ -43,21 +10,20 @@ print("""
                                                             
 """)
 
-# Primera interacciÃ³n. Solicitamos al usuario que ingrese su nombre,
+# Solicitamos al usuario que ingrese su nombre,
 # y lo guardamos en una variable de tipo str
 nombre = input("Para empezar, dime como te llamas. ")
 print()
 print("Hola ", nombre, ", bienvenido a unired")
 print()
 
-# Segunda interacciÃ³n. Solicitamos el ingreso del aÃ±o, y utilizamos este
-# dato para estimar la edad de la persona. Â¿Por quÃ© decimos que solo estamos "estimando" su edad?
-# Â¿QuÃ© ocurre si eliminamos la conversiÃ³n a tipo de dato 'int' de la siguiente lÃ­nea?
+# Solicitamos el ingreso del año, y utilizamos este
+# dato para estimar la edad de la persona. ¿Por que decimos que solo estamos "estimando" su edad?
 anio = int(input("Para preparar tu perfil, dime en qe año naciste. "))
 edad = 2024-anio
 print()
 
-# Tercera interacciÃ³n. Solicitamos la estatura, medida en metros.
+# Solicitamos la estatura, medida en metros.
 # Utilizamos la conversiÃ³n a 'int', y una expresiÃ³n para convertir esto
 # a una medida en metros y centÃ­metros
 estatura = float(input(
@@ -65,20 +31,28 @@ estatura = float(input(
 estatura_m = int(estatura)
 estatura_cm = int((estatura - estatura_m)*100)
 
-# Cuarta interacciÃ³n. Consultamos cuÃ¡ntos amigos tiene el usuario.
+# Consultamos cuantos amigos tiene el usuario.
 num_amigos = int(
     input("Muy bien. Finalmente, cuèntame cuantos amigos tienes. "))
 
-# quinta
+# Consultamos por el genero
 
-genero = input(
-    'Vamos a ver con que genero te identicas, MASCULINO o FEMENINO. ')
+genero = ''
 
-# secta
-num_telefono = int(input(
+respuest = int(input(
+    'Cual es tu genero. \n 1- Masculino \n 2- Femenino. \n Selecciona la opcion: '))
+if respuest == 1:
+    genero == 'Masculino'
+elif respuest == 2:
+    genero == 'Femenino'
+else:
+    print('escoge solo entre uno y dos')
+
+# Consultamos por el telefono
+num_telefono = (input(
     'Introduce tu numero de telefonon para que podamos conectarte con amigos. '))
 
-# septima
+# Consultamos por la direccion
 direccion = input('Indica el pais, ciudad, y direccion donde vives. ')
 
 
@@ -104,6 +78,7 @@ print()
 # print("--------------------------------------------------")
 # print(nombre, "dice:", mensaje)
 # print("--------------------------------------------------")
+
 # MENU
 print('Elige uan de las opciones en nuestro menu')
 print("1-. Deseo modificar mi nombre de perfil")
@@ -136,22 +111,3 @@ elif menu == 2:
 
 # Mensaje de salida, una vez que el ciclo ha terminado.
     print("Gracias por usar UniRed. ¡Hasta pronto!")
-
-
-# Usaremos una variable bool para indicar si el usuario desea continuar
-# utilizando el programa o no
-
-
-# Ahora puedes escribir mensajes todas las veces que quieras.
-# Observa que hemos utilizado un ciclo while que permite repetir la accin de preguntar por un mensajes
-# hasta que el usuario escribe algo distino de "S".
-
-# Pero las redes sociales pueden ejecutar mÃ¡s acciones que solamente enviar mensajes.
-
-# Te proponemos los siguientes desafÃ­os:
-# 1. Este programa termina cada vez que el valor de 'escribir_mensaje' es distinto a "S" o a "s".
-#   Modifique el programa para que el programa termine UNICAMENTE cuando se ingresa "N" o "n".
-#   En caso que se ingrese algo distinto, debe volver a solicitar una opciÃ³n al usuario.
-#
-# 2. Modifica este menÃº para que le permita el usuario realizar mÃ¡s de una acciÃ³n.
-#   Por ejemplo, puedes agregar una acciÃ³n que permita al usuario modificar su nombre.
