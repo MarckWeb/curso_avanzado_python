@@ -43,3 +43,69 @@ def es_par(num):
 
 
 print(es_par(4))
+
+# *******************************
+
+
+def funcion_misteriosa(x):
+    for i in range(2, x):
+        if x % i == 0:
+            return False
+    return True
+
+
+print(funcion_misteriosa(102))
+print(funcion_misteriosa(103))
+
+# Qué hace la siguiente función?
+
+
+def func_misteriosa(x):
+    c = 0
+    while x != 0:
+        c += 1
+        x = x//10
+        print('sss', x)
+    return c
+
+
+print(func_misteriosa(10))
+
+
+def suma(N):
+    s = 0
+    for i in range(N):
+        print(i)
+        s += i
+    print(s)
+    return s
+
+
+print(suma(11))
+
+# *********************
+
+
+def funcion(x, y):
+    return (x-8)*(y**2)
+
+
+print(funcion(16, 1))
+
+
+# encontrar el divisor mas grande
+
+def max_divisor(n):
+    maximo_actual = 0
+    i = 1
+    while i < n:
+        if n % i == 0:
+            maximo_actual = 1
+        i += 1
+    return maximo_actual
+
+
+print(max_divisor(8))
+
+
+# potencia

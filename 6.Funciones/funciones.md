@@ -73,3 +73,41 @@ print(resultado) # 16
 ´´´
 
 Las funciones son una herramienta esencial en Python y en cualquier otro lenguaje de programación, ya que permiten crear código reutilizable y organizado.
+
+## Importacion y llamado de modulos
+
+- Existen muchas librerias o modulos ya programados.
+
+- Realizan de todo tipo de tareas simples o complejas
+
+- **ramdon** permite generar numeros pseudoaleatorios.
+- **math** permite realizar calculos complejos y acceder a constantes conocidas.
+- Permiten realizar acciones u simple llamado de una funcion
+
+Existen varios metodos:
+Primer metodo
+
+```py
+#
+import <nombre modulo>
+ejemplo
+import math
+```
+
+Segundo metodo -. elemnetos que vamos a ocupar dentro de nuestro programa
+
+```py
+from <monbre modulo> import <elem1>, <elem2>
+
+ejemplo
+from math import pow, sqrt
+```
+
+Tercer metodo -. consiste en darles nombre especiales, para evitar duplicidad de nombre
+
+```py
+from <monbre modulo> import <elem1> as <alias>
+
+ejemplo
+from math import e as euler
+```
