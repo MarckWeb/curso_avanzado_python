@@ -109,3 +109,26 @@ print(max_divisor(8))
 
 
 # potencia
+
+def potencia_positiva(base, exponente):
+    if exponente == 0:
+        return 1
+    else:
+        resultado = 1
+        while exponente > 0:
+            resultado *= base
+            exponente -= 1
+        return resultado
+
+
+print(potencia_positiva(2, 0))
+
+
+def fx(n):
+    print(n * fac)
+
+
+fac = 0.5
+fx(3)
+
+# en este caso el scope de fx tomara el valro de fac, pero si queremos aumentar o cambiar el nuemro de fac dara error, otro caso si agregamos una nueva variable dentro de la funcion como fac sera una variable local
