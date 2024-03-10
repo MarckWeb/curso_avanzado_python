@@ -35,3 +35,38 @@ if lanzamiento < 4:
     print(pi * lanzamiento)
 else:
     print(e * lanzamiento)
+
+
+# /*///
+def funcion(x):
+    n = 3
+    return not bool(x % n)
+
+
+print(funcion(9))
+print(funcion(10))
+
+d = funcion(2)
+
+
+def funcion(n):
+    a = n ** 3
+    b = a ** 2
+    c = b + 100
+    d = 5 * c
+    return print(d)
+
+
+cantidad = 0
+
+
+sumando = 10
+
+
+def sumador(n):
+    n += sumando
+    return n
+
+
+print(sumador(5))
+print(sumando)

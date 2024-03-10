@@ -111,3 +111,34 @@ from <monbre modulo> import <elem1> as <alias>
 ejemplo
 from math import e as euler
 ```
+
+## Modulos
+
+si se tienen dos archivos creado por nosotros de la siguiente manera:
+
+modulo_funcion.py y programa.py
+
+- funciones y constantes iran en el archivo _modulo_funciones.py_
+- se importaran desde _programa.py_
+
+```py
+#modulo_funciones.py
+def es_par (numero):
+   if numero % 2 == 0:
+      return True
+   else:
+      return False
+```
+
+```py
+#programa.py
+from modulo_funciones import es_par
+
+numero = int(input('ingrese nº: '))
+if es_par (numero):
+   print('su numero es par')
+else:
+   print('su numero es impar')
+```
+
+cuando hay muchas funciones es muy util usar modulos, la separcion definicion y utilizacionn clarifica y ordena, sobretodo en proyectos grandes
