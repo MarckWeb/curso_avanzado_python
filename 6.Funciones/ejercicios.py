@@ -95,3 +95,20 @@ def panprimo(n):
 print(panprimo(2424643))      # Salida: False
 print(panprimo(1234567890))   # Salida: False
 print(panprimo(10123485769))  # Salida: True
+
+
+def empiezaConNueve(num):
+    # convieto el numero a string para verificar el primer digito
+    num_str = str(num)
+
+    # verifico si el primer dígito es 9
+    if num_str[0] == '9':
+        return True
+    else:
+        return False
+
+
+print(empiezaConNueve(91234))  # True
+print(empiezaConNueve(12345))  # False
+print(empiezaConNueve(9000))  # true
+print(empiezaConNueve(100))  # False
