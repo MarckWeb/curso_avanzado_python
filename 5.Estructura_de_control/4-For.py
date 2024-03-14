@@ -45,3 +45,19 @@ a = 2
 for i in range(1, 4):
     a = i ** a
 print(a)
+
+
+def reemplazar_mayusculas_con_dolar(cadena):
+    nueva_cadena = ""
+    for caracter in cadena:
+        if caracter.isupper():
+            nueva_cadena += "$"
+        else:
+            nueva_cadena += caracter
+    return nueva_cadena
+
+
+# Ejemplo de uso:
+cadena_ejemplo = "Viva la Vida"
+resultado = reemplazar_mayusculas_con_dolar(cadena_ejemplo)
+print(resultado)  # Salida: "$iva la $ida"
