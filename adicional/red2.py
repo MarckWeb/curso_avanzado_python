@@ -39,16 +39,39 @@ def obtener_estatura():
 
 def obtener_num_amigos():
     amigos = int(
-        input("Muy bien. Finalmente, cuÃ©ntame cuantos amigos tienes. "))
+        input("cuÃ©ntame cuantos amigos tienes. "))
     return amigos
 
 
-def mostrar_perfil(nombre, edad, estatura_m, estatura_cm, num_amigos):
+def obtener_genero():
+    genero = input("cuentame con que genero te identificas. ")
+    return genero
+
+
+def obtener_pais_nacimiento():
+    pais_nacimiento = input(
+        "Muy bien. Finalmente, cuentame de que pais eres. ")
+    return pais_nacimiento
+
+
+def obtener_datos():
+    edad = obtener_edad()
+    (est_m, est_c) = obtener_estatura()
+    num_amigos = obtener_num_amigos()
+    genero = obtener_genero()
+    pais_nacimiento = obtener_pais_nacimiento()
+    return (edad, est_m, est_c, num_amigos, genero, pais_nacimiento)
+
+
+def mostrar_perfil(nombre, datos):
+    edad, estatura_m, estatura_cm, num_amigos, genero, pais_nacimiento = datos
     print("--------------------------------------------------")
     print("Nombre:   ", nombre)
     print("Edad:     ", edad, "aÃ±os")
     print("Estatura: ", estatura_m, "m y ", estatura_cm, "centÃ­metros")
     print("Amigos:   ", num_amigos)
+    print("Genero:   ", genero)
+    print("Pais Nac:   ", pais_nacimiento)
     print("--------------------------------------------------")
 
 
@@ -89,11 +112,10 @@ nombre = obtener_nombre()
 print()
 print("Hola ", nombre, ", bienvenido a Mi Red")
 print()
-edad = obtener_edad()
-(estatura_m, estatura_cm) = obtener_estatura()
-num_amigos = obtener_num_amigos()
+datos = obtener_datos()
+
 print("Muy bien,", nombre, ". Entonces podemos crear un perfil con estos datos.")
-mostrar_perfil(nombre, edad, estatura_m, estatura_cm, num_amigos)
+mostrar_perfil(datos)
 print("Ya podemos preguntar, recordar y calcular datos. Esperamos que disfrutes con Mi Red")
 print("--------------------------------------------------")
 
