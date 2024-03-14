@@ -1,5 +1,9 @@
 # asignar comillas a los caracteres
 
+# \n = new line
+# \ = caracter especial. indica despues de aqui viene un caracter especial
+
+
 saludar = "'hola mundo' como estan"
 print(saludar)
 
@@ -11,7 +15,7 @@ saludar = "\"hola mundo\" como estan"
 print(saludar)
 
 # solo saldra dos \
-ruta_url = "http:\\\mi_dominio\mi_pagina"
+ruta_url = "http:\\\mi_dominio\\mi_pagina"
 print(ruta_url)
 
 # salto de linea
