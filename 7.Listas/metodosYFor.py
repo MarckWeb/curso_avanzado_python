@@ -53,3 +53,23 @@ print(alumnos)
 
 alumnos.insert(2, 'Martha')
 print(alumnos)
+
+# eliminar el ultimo elemento de la lista origial y extraer el elmento a una nueva.
+
+elem_alum = alumnos.pop()
+alumnos.pop()
+print(elem_alum)
+print(alumnos)
+
+
+# Eliminar elemento segun el elemnto indicado, en remove no se indica la posicion (no index) sino el elemento y hay varios con el mismo nombre eleminara el primero
+# El método remove() solo toma el valor del elemento que deseas eliminar de la lista, no su índice.
+lista = [1, 2, 3, 4, 3, 5]
+alumnos.remove('juan')
+
+print(alumnos)
+
+# Eliminamos el primer valor '3' de la lista
+lista.remove(3)
+
+print(lista)  # Output: [1, 2, 4, 3, 5]

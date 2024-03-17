@@ -139,4 +139,38 @@ lista.insert(1, 100)
 # Resultado: [3, 100, 1, 4, 2]
 ```
 
+**_pop:_** elimina y devuelve el último elemento de una lista. Si se especifica un índice como argumento para el método pop(), eliminará y devolverá el elemento en esa posición específica de la lista..
+
+```py
+lista = [1, 2, 3, 4, 5]
+
+# Elimina y devuelve el último elemento de la lista
+ultimo_elemento = lista.pop()
+print(ultimo_elemento)  # Salida: 5
+print(lista)  # Salida: [1, 2, 3, 4]
+
+# Elimina y devuelve el elemento en la posición 2 de la lista
+elemento_posicion_2 = lista.pop(2)
+print(elemento_posicion_2)  # Salida: 3
+print(lista)  # Salida: [1, 2, 4]
+
+```
+
+**_remove:_** se utiliza para eliminar la primera ocurrencia o posicion _(no indice)_ de un valor específico dentro de una lista. Si el valor que se quiere eliminar no está presente en la lista, se produce un error de ValueError.
+El método remove() solo toma el valor del elemento que deseas eliminar de la lista, no su índice.
+
+```py
+lista = [1, 2, 3, 4, 3, 5]
+
+# Eliminamos el primer valor '3' de la lista
+lista.remove(3)
+
+print(lista)  # Output: [1, 2, 4, 3, 5]
+
+nombres = ["Juan", "María", "Juan", "Pedro", "Juan"]
+
+nombres.remove('Juan')
+print(nombres)  # Output: ["María", "Juan", "Pedro", "Juan"]
+```
+
 En resumen, las listas son una herramienta fundamental en Python que permiten almacenar y manipular colecciones de datos de manera eficiente. Permiten una gran flexibilidad, ya que los elementos de la lista pueden ser de cualquier tipo y se pueden modificar después de que la lista haya sido creada.
