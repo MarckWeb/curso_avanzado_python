@@ -62,3 +62,11 @@ print(letras[2:2])  # []
 
 # si colocamos un steo de -1 vemos la lista en sentido inversp
 print(letras[::-1])  # ['j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a']
+
+
+def agregar_amigo(lista_amigos, nuevo_amigo):
+    lista_amigos = lista_amigos + nuevo_amigo
+    return lista_amigos
+
+
+print(agregar_amigo(['bob', 'marck'], 'rob'))
