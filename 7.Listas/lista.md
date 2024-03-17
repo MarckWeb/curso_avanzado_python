@@ -173,6 +173,18 @@ nombres.remove('Juan')
 print(nombres)  # Output: ["María", "Juan", "Pedro", "Juan"]
 ```
 
+**_split:_** se utiliza para dividir una cadena en una lista de subcadenas basadas en un separador especificado. Por defecto, el separador es el espacio en blanco, pero puedes especificar cualquier otro carácter o cadena como separador.
+
+```py
+nombres_completos = "Pérez, García, Martínez"
+
+# Dividir la cadena de nombres_completos en una lista de nombres
+nombres_lista = nombres_completos.split(", ")
+
+print(nombres_lista)  # Output: ['Pérez', 'García', 'Martínez']
+
+```
+
 ## Funciones dentro de las listas
 
 **_len:_** se utiliza para ver en numeros la longitud de la lista.
