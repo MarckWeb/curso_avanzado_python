@@ -173,6 +173,8 @@ nombres.remove('Juan')
 print(nombres)  # Output: ["María", "Juan", "Pedro", "Juan"]
 ```
 
+## Funciones dentro de las listas
+
 **_len:_** se utiliza para ver en numeros la longitud de la lista.
 
 ```py
@@ -181,6 +183,17 @@ no_olvidar = ['huevos', 'palta', 'lechuga', 'naranjas', 7000]
 no_olvidar.append('leche')
 
 print('hay', len(no_olvidar), 'cosas por comprar') # hay 6 cosas por comprar
+```
+
+**_in:_** El operador in en Python se utiliza para verificar si un valor está presente en una secuencia, como una lista o una cadena. Cuando se utiliza con listas o arrays, devuelve True si el elemento está presente en la lista y False si no lo está.
+
+```py
+no_olvidar = ['huevos', 'palta', 'lechuga', 'naranjas', 7000]
+# verificar si existe un elemnto indicado dentro de la lista
+
+print('existe vino en la lista', ('vino' in no_olvidar)) # False
+print('existe pan en la lista', ('pan' in no_olvidar)) # False
+print('existe huevos en la lista', ('huevos' in no_olvidar)) # True
 ```
 
 En resumen, las listas son una herramienta fundamental en Python que permiten almacenar y manipular colecciones de datos de manera eficiente. Permiten una gran flexibilidad, ya que los elementos de la lista pueden ser de cualquier tipo y se pueden modificar después de que la lista haya sido creada.
