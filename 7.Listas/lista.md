@@ -173,4 +173,14 @@ nombres.remove('Juan')
 print(nombres)  # Output: ["María", "Juan", "Pedro", "Juan"]
 ```
 
+**_len:_** se utiliza para ver en numeros la longitud de la lista.
+
+```py
+no_olvidar = ['huevos', 'palta', 'lechuga', 'naranjas', 7000]
+
+no_olvidar.append('leche')
+
+print('hay', len(no_olvidar), 'cosas por comprar') # hay 6 cosas por comprar
+```
+
 En resumen, las listas son una herramienta fundamental en Python que permiten almacenar y manipular colecciones de datos de manera eficiente. Permiten una gran flexibilidad, ya que los elementos de la lista pueden ser de cualquier tipo y se pueden modificar después de que la lista haya sido creada.
