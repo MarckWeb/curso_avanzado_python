@@ -189,3 +189,13 @@ print()
 for j in range(3):
     for i in range(3):
         print(tablero[i][j], end=" ")
+
+# ///////////////////
+
+
+def agregar_amigo(lista_amigos, nuevo_amigo):
+    lista_amigos.append(nuevo_amigo)
+    return lista_amigos
+
+
+print(agregar_amigo(['bob', 'max'], 'dvd'))
