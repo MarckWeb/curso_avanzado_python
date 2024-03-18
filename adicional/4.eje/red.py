@@ -169,11 +169,3 @@ def mostrar_estados_amigos(lista_amigos):
             linea = archivo.readline().rstrip()
         print(lista_amigos[k]+":", linea)
         archivo.close()
-
-
-def agregar_amigo(lista_amigos, nuevo_amigo):
-    lista_amigos.append(nuevo_amigo)
-    return lista_amigos
-
-
-print(agregar_amigo(['bob', 'max'], 'dvd'))
