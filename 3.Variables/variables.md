@@ -89,4 +89,21 @@ mi_funcion()
 
 En este caso, _variable_global_ es una variable global y puede ser accedida tanto dentro como fuera de mi*funcion(). Por otro lado, \_variable_local* es una variable local y solo puede ser accedida dentro de mi_funcion(). Si se intenta acceder a variable_local fuera de mi_funcion(), Python dará un error.
 
+## Adicional
+
+```py
+x, y, z = 5, 10, 8
+# Esto significa que x será igual a 5, y será igual a 10 y z será igual a 8.
+x, y, z = z, y, x
+# Luego, se realiza una reasignación utilizando la técnica de desempaquetado de tuplas:
+
+# Entonces, después de esta asignación, x es 8, y es 10 y z es 5.
+
+print(x > z)
+print((y - 5) == x)
+
+# True
+# False
+```
+
 Cabe mencionar que si se define una variable con el mismo nombre tanto dentro como fuera de una función, la variable dentro de la función ocultará a la variable fuera de la función. Es decir, dentro de la función, el nombre de la variable se referirá a la variable local, mientras que fuera de la función, se referirá a la variable global.
