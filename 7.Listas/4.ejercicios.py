@@ -199,3 +199,20 @@ def agregar_amigo(lista_amigos, nuevo_amigo):
 
 
 print(agregar_amigo(['bob', 'max'], 'dvd'))
+
+# ¿Cuál es el resultado del siguiente fragmento de código?
+lst = [1, 2, 3, 4, 5]
+lst_2 = []
+add = 0
+
+for number in lst:
+    add += number
+    lst_2.append(add)
+
+print(lst_2)  # [1, 3, 6, 10, 15]
+
+# ¿Cuál es el resultado del siguiente fragmento de código?
+
+lst = []
+del lst
+print(lst)  # NameError: name 'lst' is not defined
