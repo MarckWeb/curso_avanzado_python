@@ -46,7 +46,7 @@ print(a >= b)  # Mayor o igual que: False
 print(a <= b)  # Menor o igual que: True
 
 
-# 📌 OPERADORES DE IDENTIDAD (is, is not)
+# 📌 OPERADORES DE IDENTIDAD (is, is not) -. una manera de comprobar si el objeto es igual a otro
 print('OPERADORES DE IDENTIDAD (is, is not)')
 
 frutas1 = ['manzana', 'pera']
@@ -54,8 +54,12 @@ frutas2 = ['manzana', 'pera']
 frutas3 = frutas1
 
 print(frutas3 is frutas1)  # true por que es una copia
-print(frutas2 is frutas1)  # false por que se guardan en diferentes memorias
+# false por que se guardan en diferentes memorias o con referencias distintas #AAA is #BBB
+print(frutas2 is frutas1)
 
-# 📌 OPERADORES DE PERTENENCIA (in, not in)
+# 📌 OPERADORES DE PERTENENCIA (in, not in) -. si un elemento esta en una determinada coleccion en este caso lista.
 
-frutas1 = ['manzana', 'pera']
+print('Luis' in frutas1)
+print('Luis' not in frutas1)
+print('pera' in frutas1)
+print('pera' not in frutas1)
