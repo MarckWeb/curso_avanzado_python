@@ -1,19 +1,31 @@
-
-# Realizar un calculadora utilizando:
-# OPERADORES ARITMATICOS
+# 📌 OPERADORES ARITMATICOS(+, -, *, /, %, **, //)
 
 # x = int(input('ingresa el primer número: '))
 # y = int(input('ingresa el segundo número: '))
-x = 10
-y = 5
+x = 7
+y = 3
 
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
+print('Suma', x + y)
+print('Resta', x - y)
+print("multiplicacon", x * y)
+print("Divicion", x / y)
+print("Modulo o resto de la divicion", x % y)
+print("Potencia", x ** y)
+print("Divicion entera", x // y)
+
+# 📌 OPERADORES DE ASIGNACION(+=, -=, *=, /=, %=, **=, //=)
+x += 3
+print(x)
+
+# 📌 En python no existe incremnet y decrement
+# x ++
+# x --
+# ++x
+# --x
 
 
-# OPERADORES DE COMPARACION
+# 📌 OPERADORES RELACIONALES
+print('<-OPERADORES RELACIONALES->')
 
 a = 10
 b = 20
@@ -26,7 +38,7 @@ print(a >= b)  # Mayor o igual que: False
 print(a <= b)  # Menor o igual que: True
 
 
-# OPERADORES DE ASIGNACION
+# 📌 OPERADORES DE ASIGNACION
 
 a = 10  # Asigna 10 a la variable 'a'
 a += 10  # Equivalente a 'a = a + 10'
@@ -36,3 +48,18 @@ a /= 10  # Equivalente a 'a = a / 10'
 a %= 10  # Equivalente a 'a = a % 10'
 a **= 10  # Equivalente a 'a = a ** 10'
 a //= 10  # Equivalente a 'a = a // 10'
+
+
+# 📌 OPERADORES DE IDENTIDAD (is, is not)
+print('OPERADORES DE IDENTIDAD (is, is not)')
+
+frutas1 = ['manzana', 'pera']
+frutas2 = ['manzana', 'pera']
+frutas3 = frutas1
+
+print(frutas3 is frutas1)  # true por que es una copia
+print(frutas2 is frutas1)  # false por que se guardan en diferentes memorias
+
+# 📌 OPERADORES DE PERTENENCIA (in, not in)
+
+frutas1 = ['manzana', 'pera']
