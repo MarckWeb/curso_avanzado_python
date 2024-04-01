@@ -33,12 +33,3 @@ print("Eres persona?", persona, type(persona))
 nombre = "Pepito"
 apellido = 'Perez'
 print(nombre, apellido, type(nombre), type(apellido))
-
-# bigInt: sufijo n
-# numero_grande = bigInt(7)
-# 7n / 4n -> 1n
-# 1000n + 20 -> typeError
-# 1000n + 0n -> RangeError
-# BigInt(42) -> 42n
-# BigInt() -> TypeError
-# `${123n}` -> 123
