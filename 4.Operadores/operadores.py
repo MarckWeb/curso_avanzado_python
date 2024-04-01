@@ -17,6 +17,14 @@ print("Divicion entera", x // y)
 x += 3
 print(x)
 
+x += 10  # Equivalente a 'x = x + 10'
+x -= 10  # Equivalente a 'x = x - 10'
+# a _= 10 # Equivalente a 'x = x _ 10'
+x /= 10  # Equivalente a 'x = x / 10'
+x %= 10  # Equivalente a 'x = x % 10'
+x **= 10  # Equivalente a 'x = x ** 10'
+x //= 10  # Equivalente a 'x = x // 10'
+
 # 📌 En python no existe incremnet y decrement
 # x ++
 # x --
@@ -36,18 +44,6 @@ print(a > b)  # Mayor que: False
 print(a < b)  # Menor que: True
 print(a >= b)  # Mayor o igual que: False
 print(a <= b)  # Menor o igual que: True
-
-
-# 📌 OPERADORES DE ASIGNACION
-
-a = 10  # Asigna 10 a la variable 'a'
-a += 10  # Equivalente a 'a = a + 10'
-a -= 10  # Equivalente a 'a = a - 10'
-# a _= 10 # Equivalente a 'a = a _ 10'
-a /= 10  # Equivalente a 'a = a / 10'
-a %= 10  # Equivalente a 'a = a % 10'
-a **= 10  # Equivalente a 'a = a ** 10'
-a //= 10  # Equivalente a 'a = a // 10'
 
 
 # 📌 OPERADORES DE IDENTIDAD (is, is not)

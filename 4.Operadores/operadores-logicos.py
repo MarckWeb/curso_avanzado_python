@@ -1,4 +1,11 @@
-# and, or, not
+# 📌 OPERADORES LOGICOS (and, or, not)
+numero1 = 7
+numero2 = 3
+print('and', (numero1 > numero2) and (numero2 == 5))
+print('or', (numero1 > numero2) or (numero2 == 5))
+print('not', not (numero1 > numero2))
+print('not', not (numero2 == 5))
+
 
 # AND-. ambas condiciones deben ser verdadero para que el resultado sea verdadero. Si una condicion es falsa la condicion es falso.
 
