@@ -1,44 +1,34 @@
-"""
-   Ejemplo de tipos de datos en python
-"""
+"""Module providing a function printing python version."""
+# Números Enteros: Crea una variable que contenga un número entero
+ENTERO = 10
+print('Numero Entero', ENTERO)
+print(type(ENTERO))
 
-# numeros enteros (int)
+# Números de Punto Flotante: Crea una variable que contenga un número flotante
+FLOTANTE = 100.2
+print('Numero Flotante', FLOTANTE)
+print(type(FLOTANTE))
 
-numero1 = 5
-numero2 = 4
-suma = numero1 + numero2
-print(suma)
-print("Resaultado de la suma:", suma, type(suma))
-# print("Resaultado de la suma:" + suma)
+# Números Complejos: Crea una variable que contenga un número complejo
+COMPLEJO = 10 + 4j
+print('Numero Complejo', COMPLEJO)
+print(type(COMPLEJO))
 
-"""Python no permite concatenar numero con string (TypeError: can only concatenate str (not "int") to str), La solucion es convertir el numero a str"""
-print("Resaultado de la suma: " + str(suma))
-# es lioso la concatenacion de python
-print("Resaultado de la suma: " + str(type(str(suma))))
+# Números Booleanos: Crea una variable que contenga un valor booleano
+BOOLEAN = True
+print('Variable tipo boolean', BOOLEAN)
 
-# numeros reales (float)
+# Cadenas de Texto: Crea una variable que contenga una cadena de texto
+VARIABLE_STRING = 'mi variable'
+print('Variable de tipo string', VARIABLE_STRING)
 
-base = 5.78
-altura = 9.23
+# Operaciones con Cadenas: Dada una cadena de al menos 6 letras
 
-triangulo = base * altura / 2
-print("Area dek triangulo", triangulo, type(triangulo))
+# imprime el primer y último carácter
 
-# booleanos: True o False (bool)
-persona = True
-print("Eres persona?", persona, type(persona))
+# Luego crea una subcadena con los caracteres del índice 1 al 3.
 
-# cadenas de texto (str)
-
-nombre = "Pepito"
-apellido = 'Perez'
-print(nombre, apellido, type(nombre), type(apellido))
-
-# bigInt: sufijo n
-# numero_grande = bigInt(7)
-# 7n / 4n -> 1n
-# 1000n + 20 -> typeError
-# 1000n + 0n -> RangeError
-# BigInt(42) -> 42n
-# BigInt() -> TypeError
-# `${123n}` -> 123
+CADENA = 'tetras'
+print(CADENA[0], CADENA[5])
+SUB_CADENA = CADENA[1] + CADENA[2] + CADENA[3]
+print(SUB_CADENA)
