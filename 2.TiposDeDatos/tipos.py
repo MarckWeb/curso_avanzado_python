@@ -18,6 +18,14 @@ print("Resaultado de la suma: " + str(type(str(suma))))
 
 # numeros reales (float)
 
+base = 5.78
+altura = 9.23
+
+triangulo = base * altura / 2
+print("Area dek triangulo", triangulo, type(triangulo))
+
 # booleanos: True o False (bool)
+persona = True
+print("Eres persona?", persona, type(persona))
 
 # cadenas de texto (str)
