@@ -1,0 +1,10 @@
+x = float(input('Introduce el primer numero: '))
+y = float(input('Introduce el segundo numero: '))
+
+print('Suma', x + y)
+print('Resta', x - y)
+print("multiplicacon", x * y)
+print("Divicion", x / y)
+print("Modulo o resto de la divicion", x % y)
+print("Potencia", x ** y)
+print("Divicion entera", x // y)
