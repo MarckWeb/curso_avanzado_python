@@ -49,3 +49,9 @@ def es_primo(numero):
 
 
 print(es_primo(1))
+
+hora = 10
+if hora == 15:
+    print('La clase ha terminado')
+else:
+    print('Lo siento, todavia estamos en clase')

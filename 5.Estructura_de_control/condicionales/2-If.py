@@ -5,7 +5,7 @@ else:
     print('No puedes entrar')
 print('listo')
 
-# NOTA-. es importante que se respete el espacio el codigo dentro del if, no debe estar al mismo nivel
+# NOTA-. es importante que se respete el espacio el codigo dentro del if, no debe estar al mismo nivel y tampoco mas alla.
 
 
 # las evaluaciones se hacen de arriba hacia abajo
@@ -18,8 +18,8 @@ elif edad > 54:
 
 elif edad > 17:
     print('puedes ver la pelicula')
-# else:
-#     print('ve a otro lado')
+else:
+    print('ve a otro lado')
 
 
 # Las sentencias break y continue: más ejemplos
