@@ -45,3 +45,20 @@ while numero_randon != numero:
     elif numero_randon < numero:
         print('te has pasado')
 print('Felicidades!!! acertaste')
+
+
+"""
+   encontrar los numeros primos del 1 al 100
+   un numero primo solo es divisible por si mismo y la unidad
+   p.e. para probar si 7 es primo, recorremos sus posibles divisores del 2 al 6
+"""
+
+# bucles para recorrer lso nuemros hasta el 100
+#   bucle para recorrer los posobles divisibles
+#   si despues de recorrer todos siguen siendo primo lo mostramos
+
+numero = 0
+
+while numero < 101:
+    print(numero)
+    numero += 1
