@@ -39,7 +39,7 @@ print(no_olvidar[2])
 # mostra los elemntos de las pocisiones de 1 hasta 4-1
 print(no_olvidar[1: 4])
 
-# slising
+"""slising"""
 
 # lista[inicio : fin : step]
 # desde lista [inicio] hasta lista [fin-1], en pasos de step
