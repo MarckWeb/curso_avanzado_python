@@ -48,17 +48,56 @@ print('Felicidades!!! acertaste')
 
 
 """
+OPCION 1
    encontrar los numeros primos del 1 al 100
    un numero primo solo es divisible por si mismo y la unidad
    p.e. para probar si 7 es primo, recorremos sus posibles divisores del 2 al 6
 """
 
-# bucles para recorrer lso nuemros hasta el 100
+# bucles para recorrer los numeros hasta el 100
 #   bucle para recorrer los posobles divisibles
 #   si despues de recorrer todos siguen siendo primo lo mostramos
 
-numero = 0
+numero = 2
+numeros_primos = ''
 
 while numero < 101:
-    print(numero)
+    # se da por hecho que todos lso numeros son primos salvo que se demuestre lo contrario.
+    es_primo = True
+
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            es_primo = False
+            break  # Damos por terminado el bucle
+
+    if es_primo:
+        print(numero, end=' ')
     numero += 1
+print('\n-----FIN-----')
+"""
+OPCION 2
+"""
+
+for i in range(2, 101):
+    count = 0
+    for x in range(2, i):
+        if i % x == 0:
+            count += 1
+    if count > 0:
+        continue
+    else:
+        print(i, end=" ")
+
+print('\n-----FIN-----')
+"""
+OPCION 3
+ejercicio avanzado usando else en bucle
+"""
+
+for numero in range(2, 101):
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            break
+    else:
+        print(numero, end=" ")
+print('\n-----FIN-----')
