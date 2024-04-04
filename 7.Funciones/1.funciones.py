@@ -1,3 +1,27 @@
+# declarar funciones
+
+def saludar():  # funcion sin paramero y no retornan ningun resultado
+    print('Hola, que tal')
+
+
+def despedir(nombre):  # fun que recibe el paramtero nombre y retorna un mensaje personalizado
+    print(nombre + ', Hasta luego')
+
+
+# invocar o llamar a una funcion
+saludar()  # obligatorio poner los parentesis
+
+"""si no llamo a la funcion sin parentesis, saludar no da error pero no muestra nada porque no lo reconoce como funcion"""
+
+# si intentamos pasar parametros a una funcion que no los tiene declarados
+# saludar('11') TypeError: saludar() takes 0 positional arguments but 1 was given
+
+# Cuando invoco a una funcion que retorna un dato, ese dato hay que guardarlo, mostrarlo...
+print(despedir('Pepito'))
+resultado = despedir('Carlos')
+print(resultado)
+
+
 # Dada la siguiente función en Python, ¿qué imprimirá?
 
 def mi_funcion(a, b):
