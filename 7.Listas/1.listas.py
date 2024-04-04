@@ -101,19 +101,29 @@ print(mas_colores)
 print('\n---FINAL---')
 print('------SLICES lista[inicio:fin:paso]-------')
 '''  slices  '''
+print('ORIGINAL', mas_colores)
 # mostrar los 2 ultimos elementos
 print('ULTIMOS ELEMENTOS', mas_colores[-2:])
 
 # mostrar desde el ultimo al antepenultimo
-print('ANTEPENULTIMOS ELEMENTOS', mas_colores[-3::-1])
+print('ANTEPENULTIMOS ELEMENTOS', mas_colores[-1:-4:-1])
 
 # mostrar hasta los 5 primeros elementos
+print('5 PRIMEROS ELEMENTOS', mas_colores[0:5])
 
 # mostrar desde el segundo al cuarto
 
+print('SEGUNDO A CUARTO ELEMENTO', mas_colores[1:4])
+
 # mostrar desde el primero al penultimo de 2 en 2
 
+print('PRIMERO HASTA EL PENULTIMO', mas_colores[0:-1:2])
+
 # mostrar desde el penultimo al primero de 2 en 2
+
+print('PENULTIMO A PRIMERO', mas_colores[-2::-2])
+print('PENULTIMO A PRIMERO', mas_colores[0:-1:-2])
+
 print('\n---FINAL---')
 mas_colores.append('naranja')
 print(mas_colores)
