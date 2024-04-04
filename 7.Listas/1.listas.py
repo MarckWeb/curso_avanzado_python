@@ -117,7 +117,7 @@ print('SEGUNDO A CUARTO ELEMENTO', mas_colores[1:4])
 
 # mostrar desde el primero al penultimo de 2 en 2
 
-print('PRIMERO HASTA EL PENULTIMO', mas_colores[0:-1:2])
+print('PRIMERO HASTA EL PENULTIMO', mas_colores[:-1:2])
 
 # mostrar desde el penultimo al primero de 2 en 2
 

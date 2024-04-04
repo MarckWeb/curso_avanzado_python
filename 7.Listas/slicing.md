@@ -69,5 +69,3 @@ En el tercer ejemplo:
 - -3: Selecciona el tercer elemento desde el final de la lista.
 - -8: Selecciona el octavo elemento desde el final de la lista.
 - -1: Indica que el paso es negativo, es decir, los elementos se seleccionarán en orden inverso.
-
-Es importante recordar que cuando se utiliza un paso negativo, el índice inicial **(inicio)** debe ser mayor que el índice final **(fin)** para que la selección se realice correctamente.
