@@ -99,7 +99,22 @@ mas_colores = []
 mas_colores = colores + ['blanco', 'negro', 'rosa', 'azul']
 print(mas_colores)
 print('\n---FINAL---')
+print('------SLICES lista[inicio:fin:paso]-------')
+'''  slices  '''
+# mostrar los 2 ultimos elementos
+print('ULTIMOS ELEMENTOS', mas_colores[-2:])
 
+# mostrar desde el ultimo al antepenultimo
+print('ANTEPENULTIMOS ELEMENTOS', mas_colores[-3::-1])
+
+# mostrar hasta los 5 primeros elementos
+
+# mostrar desde el segundo al cuarto
+
+# mostrar desde el primero al penultimo de 2 en 2
+
+# mostrar desde el penultimo al primero de 2 en 2
+print('\n---FINAL---')
 mas_colores.append('naranja')
 print(mas_colores)
 print('\n---FINAL---')
@@ -179,3 +194,11 @@ print('todos en inverso', lista_vacia[::2])
 
 # Mostrar todo los elementos de la lista en orden inverso de 2 en 2
 print('todos en inverso', lista_vacia[::-2])
+
+
+'''Operadores de pertenencia: in y not in'''
+# in -> Probar si un elemento esta en la lista
+# not in -> Comprueba si un elemento no existe en la lista
+
+print('hola' in lista_vacia)
+print('hola' not in lista_vacia)
