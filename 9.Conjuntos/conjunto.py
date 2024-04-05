@@ -35,9 +35,32 @@ lista = [1, 2, 3, 3, 3, 2]
 lista1 = set(lista)
 print(lista1)
 
+# copiar
+otra = frutas.copy()
+print(otra)
+
 # Borra todos os elementos
 frutas.clear()
 print(frutas)  # set()
 
-otra = frutas.copy()
+
+print(frutas)
 print(otra)
+
+# tambien podemos utilizar in y not in
+
+print('Fresas' in otra)
+print('Fresas' not in otra)
+
+
+# recorrer conjuntos
+
+for fruta in otra:
+    print(fruta, end=(' -> '))
+print()
+
+
+# set1.update(set2)
+# cjto.discard(elto)
+# set1.issuperset
+# set1.issubset

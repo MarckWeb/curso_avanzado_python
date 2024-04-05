@@ -9,6 +9,26 @@ print(datos_trabajador('Jose', estadoCivil='Casado'))
 print(datos_trabajador('Jose', 'Casado', 35000))
 
 
-# crear una funcion que recibe dos parametros:
-#   - datos como numero variable de argumentos
-#   - caracter separador optional
+# crear una funcion que recibe:
+#   - datos como numero variable de argumento
+#   - caracter separador opcional, por defecto " | "
+#   separador.join(datos)
+def unir_datos(*datos, separador=" | "):
+    return separador.join(datos)
+
+
+print(unir_datos('otro', 'a', 'e', 'i', 'o', 'u'))
+print(unir_datos('otro', 'a', 'e', 'i', 'o', 'u', separador=", "))
+print(unir_datos('otro', 'a', 'e', 'i', 'o', 'u', separador=" "))
+print(unir_datos('otro', 'a', 'e', 'i', 'o', 'u', separador=" - "))
+
+# No pongo el keyword separador, interpreta el separador como un dato mas
+print(unir_datos('a', 'e', 'i', 'o', 'u', " - "))
+
+# Probar a intercambiar el orden de los argumentos
+# SyntaxError: positional argument follows keyword argument
+# print(unir_datos(separador=" - ", 'a', 'e', 'i', 'o', 'u' ))
+
+# Probar a intercambiar los parametros en la declaracion de la funcion
+# SyntaxError: positional argument follows keyword argument
+# print(unir_datos(separador=" - ", 'a', 'e', 'i', 'o', 'u' ))
