@@ -101,3 +101,78 @@ print(lista_dias)
 
 lista_de_numeros = tuple([1, 2, 2, 4, 5])
 print(lista_de_numeros)
+
+# Otra forma de crear tuplas
+
+tupla_lista = 1, 2, 3, 4, 5
+print(tupla_lista)
+
+
+# Ejemplo de compresion de tuplas
+
+# una lista de números y queremos crear una tupla que contenga cada número junto con su cuadrado. Podemos usar compresión de tuplas para lograr esto de la siguiente manera:
+numeros = [1, 2, 3, 4, 5]
+tupla_cuadrados = tuple((num, num ** 2) for num in numeros)
+print(tupla_cuadrados)  # ((1, 1), (2, 4), (3, 9), (4, 16), (5, 25))
+
+
+# creamos una tupla de tuplas con compresion
+tupla_tuplas = [(x, y)for x in [0.4, 1.5, 5]
+                for y in [-1.2, 0.2, -2.4] if x > y]
+print(tupla_tuplas)
+print(type(tupla_tuplas))
+
+# creamos una lista de tuplas con compresion
+lista_tuplas = [(x, y)for x in [0.4, 1.5, 5]
+                for y in [-1.2, 0.2, -2.4] if x > y]
+print(tupla_tuplas)
+print(type(tupla_tuplas))
+
+# Desarrollo del ultimo ejemplo
+
+
+# Mostrar los metodos de la clase tuple
+#   print(dir(tuple))
+
+
+# multiplicar listas
+resultado = [1, 2, 3] * 2
+print('Multiplicar listas', resultado)
+
+# multiplicar tuplas
+resultado = (1, 2, 3, 4, 5) * 3
+print('Multiplicar tuplas', resultado)
+resultado = (7, 8, 9) * -2
+print(resultado)  # ()
+
+# sumar tuplas
+# resultado = (5, 6, 7, 8, 9) + 2 # TypeError: can only concatenate tuple (not "int") to tuple
+resultado = (10, 11) + (12, 13)
+print(resultado)
+print(type(resultado))
+
+
+'''Funcion zip fusiona primero con primero , segundo con segundo'''
+tupla1 = ('a', 'b')
+tupla2 = (1, 2)
+tupla3 = tuple(zip(tupla1, tupla2))
+tupla4 = list(zip(tupla1, tupla2))
+print(tupla3)
+print(tupla4)
+
+# la funcion zip siempre devuleve tuplas.
+# los argumetos pueden ser de diferentes tipos siempres que sean iterables,
+
+lista1 = []
+
+
+for i in 'local':
+    print(i)
+
+# muestra el indice de cada tupla y lista, es decir primero con primero, segundo con segundo
+st = tuple(zip('hola', 'mundo'))
+print(st)
+
+
+# si en una coleccion hay mas elementos que otra los ignorara o omitira
+print(list(zip(('a', 'b', 'c'), (1, 2))))  # [('a', 1), ('b', 2)]
