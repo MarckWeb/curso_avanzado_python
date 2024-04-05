@@ -12,11 +12,3 @@ print(datos_trabajador('Jose', 'Casado', 35000))
 # crear una funcion que recibe dos parametros:
 #   - datos como numero variable de argumentos
 #   - caracter separador optional
-
-
-def numeros(separador='|', *datos):
-    return separador.join([str(dato) for dato in datos])
-
-
-print(numeros(' <> ', 1, 2, 3, 5, 9, 9, 8))
-print(numeros(' - ', 'carlos', 'david', 'juan', 'bob'))
