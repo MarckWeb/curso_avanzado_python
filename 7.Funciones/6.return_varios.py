@@ -41,3 +41,6 @@ tupla = procesar_texto('Por fin es viernes')
 print(tupla)
 for item in tupla:
     print(item)
+
+
+# Tarea hacer y probar variables locales y globales
