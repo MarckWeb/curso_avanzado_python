@@ -1,3 +1,10 @@
+# paramiko
+# Scapy
+# Scrapy
+# Selenium
+# BeautifulSoap
+
+
 # Vamos a modificar el cÃ³digo que acabamos de ver para encapsular algunas partes de Ã©l
 # en funciones.
 

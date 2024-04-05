@@ -14,7 +14,9 @@ print(datos_trabajador('Jose', 'Casado', 35000))
 #   - caracter separador optional
 
 
-def numeros(separador, *numeros):
-    print(separador, *numeros)
+def numeros(separador='|', *datos):
+    return separador.join([str(dato) for dato in datos])
 
-numeros('|', 1,2,3,5,9,9,8)
+
+print(numeros(' <> ', 1, 2, 3, 5, 9, 9, 8))
+print(numeros(' - ', 'carlos', 'david', 'juan', 'bob'))
