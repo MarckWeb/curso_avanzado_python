@@ -71,3 +71,43 @@ def agregar_amigo(lista_amigos, nuevo_amigo):
 
 
 print(agregar_amigo(['bob', 'marck'], ['rob']))
+
+
+# ejercicios
+''' 
+Dada una lista mi_lista que contiene los siguientes elementos [3, 6, 2, 7, "pera", False, 4.5]
+'''
+
+mi_lista = [3, 6, 2, 7, "pera", False, 4.5]
+
+'''Accede al tercer elemento (índice 2) y guárdalo en una variable llamada tercer_elemento.'''
+
+tercer_elemento = mi_lista[2]
+
+'''Accede al último elemento usando un índice negativo y guárdalo en una variable llamada ultimo_elemento.'''
+
+ultimo_elemento = mi_lista[-1]
+
+'''Cambia el valor del segundo elemento (índice 1) a "seis".'''
+
+mi_lista[1] = 6
+
+'''Añade el elemento "nuevo" al final de la lista.'''
+
+mi_lista.append('nuevo')
+
+'''Inserta el elemento "inserción" en la segunda posición (índice 1).'''
+
+mi_lista.insert(1, 'insercion')
+print(mi_lista)
+
+'''Elimina el primer elemento de valor False que encuentres en la lista.'''
+
+mi_lista.remove(False)
+print(mi_lista)
+
+'''Recorre la lista usando un bucle for e imprime cada elemento.'''
+
+for elemento in mi_lista:
+    print(elemento, end=' ')
+print('')
