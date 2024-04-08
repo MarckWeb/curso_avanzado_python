@@ -93,3 +93,15 @@ print(sorted(alumnos, reverse=True))  # descendente
 # Ordena segun los valores del diccionario
 print(sorted(alumnos.values()))  # ascendente
 print(sorted(alumnos.values(), reverse=True))  # descendente
+
+
+'''Numero variable d arcgumentos'''
+
+
+def sumar(*numero):
+    pass
+
+
+sumar()
+sumar(1)
+sumar(3, 7, 5, 8, 9)

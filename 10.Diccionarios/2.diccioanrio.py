@@ -20,3 +20,13 @@ alumnos_ordenados = {nombre: calificacion for nombre,
                      calificacion in lista_alumnos_ordenada}
 
 print(alumnos_ordenados)
+
+
+# Funcion enumerate-. la funcion enumerate retorna el indice y el elemento de ese indice
+lista = ['a', 'e', 'i', 'o', 'u']
+resultado = {}
+for clave, valor in enumerate(lista):
+    print(clave)
+    print(valor)
+    resultado.update({clave: valor})
+print(resultado)
