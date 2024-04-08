@@ -105,3 +105,18 @@ def sumar(*numero):
 sumar()
 sumar(1)
 sumar(3, 7, 5, 8, 9)
+'''En los dicionarios el numero variable de argumentos es con doble **, para recoger la clave y el valor'''
+# ** alumnos argumentos clave:valor con longitud variable
+
+
+def procesar_alumno(**alumnos):
+    for clave, valor in alumnos.items():
+        print(clave, '-', valor)
+
+
+alumnos = dict(Juan=6.4, Maria=9.3, Adolfo=7.1)
+procesar_alumno(**alumnos)
+procesar_alumno(**dict(Juan=6.4, Maria=9.3, Adolfo=7.1))
+procesar_alumno(Juan=6.4, Maria=9.3, Adolfo=7.1)
+
+'''Resumen: *args: son tuplas y **k,v,args: son diccionarios'''
