@@ -4,6 +4,7 @@
    - No se garantiza el orden de entra de los elementos (es decir la salida sera diferente).
    - Como todas las colecciones, permite elementos de diferentes tipos.
    - Se crean: {}
+    -Cuidado que un coonjunto = {}, crea un diccionario, forma de crear un set vacio set()
 '''
 
 conjunto = {'a', 'b', 'c', 'd', 'e', 'e'}
