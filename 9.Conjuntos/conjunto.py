@@ -58,9 +58,3 @@ print('Fresas' not in otra)
 for fruta in otra:
     print(fruta, end=(' -> '))
 print()
-
-
-# set1.update(set2)
-# cjto.discard(elto)
-# set1.issuperset
-# set1.issubset

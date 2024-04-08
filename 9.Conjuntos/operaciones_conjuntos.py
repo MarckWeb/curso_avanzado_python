@@ -34,3 +34,39 @@ numeros1.difference_update(numeros2)
 numeros2 -= numeros1
 print(numeros1)
 print(numeros2)
+
+# Modifica el conjunto uniendo los elementos de otro conjunto
+# numeros1.update(numeros2)
+numeros1 |= numeros2
+print('update', numeros1)  # 3n numero1 almacena numeros1 + numeros2
+print('update', sorted(numeros1, reverse=True))
+
+# set1.update(set2)
+# cjto.discard(elto)
+# set1.issuperset
+# set1.issubset
+
+# discard: Borra el elemento psado como argumento si lo encuentra, sino no hace nada
+# TypeError: set.discard() takes exactly one argument (2 given)
+# numeros1.discard(0, 2)
+numeros1.discard(2)
+print(numeros1)
+
+# sino encuentra el elemento con remove devulve un error
+# numeros1.remove(27)
+# print(numeros1)  # KeyError: 27
+
+
+# issuperset: comprueba si el primer conjunto contiene todos los datos del segundo
+print(numeros1.issuperset(numeros2))
+nums1 = {1, 2, 3, 4, 5}
+nums2 = {1, 5}
+
+print(nums1.issuperset(nums2))
+
+
+# issubset: comprueba si el primer conjunto es subconjunto del sugundo,
+# que todos los elementos del primer conjunto estan en el segundo
+
+print(numeros1.issubset(numeros2))
+print(nums2.issubset(nums1))
