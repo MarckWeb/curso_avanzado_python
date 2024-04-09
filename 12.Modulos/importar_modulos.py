@@ -29,3 +29,11 @@ print('E', n_e)
 from math import *
 print('pi', pi)
 print('e', e)
+
+
+# mostrar el contenido de un modulo
+import math
+
+print(dir(math))
+for recurso in dir(math):
+    print(recurso)
