@@ -16,3 +16,16 @@ else:
 finally:
     # siempres se va a ejecutar este bloque haya errores o no
     print('Numero: ', numero1)
+
+
+# combinaciones minimas
+try:
+    pass
+finally:
+    pass
+
+
+try:
+    pass
+except:
+    pass
