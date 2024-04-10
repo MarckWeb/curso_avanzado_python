@@ -35,6 +35,7 @@ print('min() ->', min('12255Ma')) # a
 print('replace() ->', 'abracadabra'.replace('a', 'A')) # reemplaza todas
 print('replace() ->', 'abracadabra'.replace('a', 'A', 1)) # reemplaza solo la primera
 print('replace() ->', 'abracadabra'.replace('a', 'A', 2)) # reemplaza las dos primeras 'a'
+print('replace() ->', 'abracadabra'.replace('a', 'A', -1)) # no hace nada ni da error
 
 
 # Función split() =>

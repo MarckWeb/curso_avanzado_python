@@ -17,6 +17,7 @@ for i in range(len(datos) + 1):
     except (IndexError, ValueError, TypeError, BaseException) as ex:
         print('Error de tipo: ', type(ex))
         print('Mensaje del error: ', ex)
+        # muestra la pila de llamadas
         traceback.print_exc()
     else:
         # sumar el numero

@@ -10,6 +10,7 @@ except ValueError as error:
     print('Error: debe ser un valor numerico')
     print(error)
     print(type(error))
+    # TRACEBACK-. muestra la pila de llamadas
     traceback.print_exc()
 except ZeroDivisionError as e:
     # si el numero ingresado es cero
