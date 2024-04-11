@@ -21,10 +21,11 @@ encapsulación para los atributos privados.
 class CuentaBancaria:
     def __init__(self, titular, saldo_inicial):
         # Inicializar atributos privados
-        pass
+        self.__titular = titular
+        self.__saldo = saldo_indicado
 
     def depositar(self, cantidad):
-        # Añadir cantidad al saldo
+        self.__saldo = cantidad
         pass
 
     def retirar(self, cantidad):
