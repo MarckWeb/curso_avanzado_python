@@ -1,0 +1,91 @@
+Cómo se utilizan los métodos insert(), append() y la función filter() en Python, junto con ejemplos de su uso:
+
+1. Método insert():
+El método insert() se utiliza para insertar un elemento en una lista en una posición específica.
+
+Sintaxis:
+
+lista.insert(posición, elemento)
+posición: Es la posición en la que se va a insertar el elemento en la lista.
+elemento: Es el elemento que se va a insertar en la lista.
+
+Ejemplo:
+
+numeros = [1, 2, 3, 4, 5]
+numeros.insert(2, 10)
+print(numeros)
+# Salida: [1, 2, 10, 3, 4, 5]
+
+
+2. Método append():
+El método append() se utiliza para agregar un elemento al final de una lista.
+
+Sintaxis:
+
+lista.append(elemento)
+elemento: Es el elemento que se va a agregar al final de la lista.
+
+Ejemplo:
+
+frutas = ["manzana", "banana", "cereza"]
+frutas.append("naranja")
+print(frutas)
+# Salida: ["manzana", "banana", "cereza", "naranja"]
+
+
+3. Función filter():
+La función filter() se utiliza para filtrar elementos de una secuencia (como una lista) según una función de filtro.
+
+Sintaxis:
+
+resultado = filter(función, secuencia)
+función: Es la función de filtro que se aplica a cada elemento de la secuencia. Debe devolver True para mantener el elemento o False para descartarlo.
+secuencia: Es la secuencia de elementos que se va a filtrar.
+
+Ejemplo:
+
+def es_par(numero):
+    return numero % 2 == 0
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+pares = list(filter(es_par, numeros))
+print(pares)
+# Salida: [2, 4, 6, 8, 10]
+
+En este ejemplo, filter() se utiliza para filtrar los números pares de la lista numeros utilizando la función es_par() como criterio de filtrado.
+
+
+La función filter() se puede usar en cualquier secuencia iterable en Python, incluidas las cadenas. Cuando se aplica a una cadena, filter() devuelve un iterador que contiene los caracteres que cumplen con el criterio de la función de filtro.
+
+Aquí tienes un ejemplo de cómo usar filter() con una cadena:
+
+cadena = "hola123"
+digitos = filter(str.isdigit, cadena)
+print(list(digitos))
+
+En este ejemplo, str.isdigit es una función integrada que devuelve True si un carácter es un dígito y False en caso contrario. La función filter() se utiliza para filtrar los dígitos de la cadena "hola123", y luego convertimos el iterador resultante en una lista para imprimir los dígitos encontrados.
+
+La salida será:
+['1', '2', '3']
+
+Esto muestra que filter() ha filtrado correctamente los dígitos de la cadena "hola123".
+
+
+Los métodos insert() y append() no se pueden utilizar directamente en cadenas en Python. Estos métodos son específicos de las listas y se utilizan para insertar elementos en una posición específica o agregar elementos al final de una lista, respectivamente.
+
+Sin embargo, puedes realizar operaciones similares en cadenas utilizando la concatenación de cadenas o la interpolación de cadenas. Aquí tienes ejemplos de cómo hacerlo:
+
+# Concatenación de cadenas para agregar al final
+cadena = "Hola "
+cadena += "Mundo"
+print(cadena)  # Salida: "Hola Mundo"
+
+# Interpolación de cadenas para insertar en una posición específica
+cadena = "Hola Mundo"
+posicion = 5
+cadena = cadena[:posicion] + "Python " + cadena[posicion:]
+print(cadena)  # Salida: "Hola Python Mundo"
+
+En estos ejemplos, la concatenación de cadenas se utiliza para agregar contenido al final de la cadena, y la interpolación de cadenas se utiliza para insertar contenido en una posición específica de la cadena.
+
+

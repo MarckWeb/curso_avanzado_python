@@ -34,3 +34,40 @@ isspace()
 filter()
 center()
 '''
+cadena = 'abracadabra'
+print('m' in cadena) # False
+print('b' in cadena) # True
+
+print('m' not in cadena) # True
+print('b' not in cadena) # False
+
+# Repetir una cadena o caracter
+print('Hola' * 3)
+print('a' * 5)
+
+# el orden no afecta al producto
+print(5 * 'holas')
+
+""" Estas comillas se llaman docstring, utilizamos a nivel comentario de bloque:
+pero tambien se puede dar otras utilizadades ej: me permite crear cadenas en varias lineas"""
+nombre_completo = '''  
+        Pepito
+        
+        Perez
+
+'''
+print(nombre_completo)
+
+# insert() => se utiliza para insertar un elemento en una lista en una posición específica.
+# Este método modifica la lista original y no devuelve nada (o devuelve None).
+# El método insert() toma dos argumentos:
+# Índice: La posición en la que quieres insertar el elemento.
+# Elemento: El elemento que quieres insertar en la lista
+
+# Crear una lista
+lista = [1, 2, 3, 4, 5]
+
+# Insertar el número 10 en la posición 2 (índice 1)
+lista.insert(1, 10)
+
+print(lista)  # Esto imprimirá: [1, 10, 2, 3, 4, 5]
