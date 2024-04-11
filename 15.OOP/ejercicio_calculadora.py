@@ -11,6 +11,8 @@ class Calculadora:
     # sino pongo constructor, coge el constructor por defecto
     # Calculadora()
 
+    # Meotodos de Instancia porque recibne como argumento (self)
+    # Estos metodos se invocan a travez del objeto obj.metd
     def sumar( self,a, b):
         return a + b
 
@@ -26,11 +28,11 @@ class Calculadora:
             resultado = a / b
         except ZeroDivisionError as e:
             print('Error:', e)
-
+        return resultado
 a = float(input('Intriduce un numero: '))
 b = float(input('Intriduce un numero: '))
-resultado = Calculadora()
-print(f'{a} + {b} = {resultado.sumar(a, b)}')
-print(f'{a} - {b} = {resultado.restar(a, b)}')
-print(f'{a} * {b} = {resultado.multiplicar(a, b)}')
-print(f'{a} // {b} = {resultado.dividir(a, b)}')
+calcular = Calculadora()
+print(f'{a} + {b} = {calcular.sumar(a, b)}')
+print(f'{a} - {b} = {calcular.restar(a, b)}')
+print(f'{a} * {b} = {calcular.multiplicar(a, b)}')
+print(f'{a} / {b} = {calcular.dividir(a, b)}')

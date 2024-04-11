@@ -6,13 +6,14 @@ Crear una clase Cliente que tenga como propiedades:
   - Crear 2 clientes
 '''
 
-# Composición: Clases como atributos de otras clases
-'''
-Consiste en dividir el software en diferentes componentes, resolver cada uno por
-separado y por último unirlos en una solución única.
-• Ante un problema complejo es más fácil resolverlo cuando se divide en piezas
-manejables.
-'''
+# Composición: En Python, la composición es un concepto de programación orientada a objetos (POO)
+# que se refiere a la capacidad de crear una clase utilizando objetos de otras clases en lugar de
+# heredar directamente de ellas. Esto se logra mediante la creación de instancias de otras clases
+# dentro de una clase principal.
+#
+# En lugar de usar la herencia, donde una clase hereda atributos y comportamientos de otra clase,
+# la composición permite construir una clase utilizando objetos de otras clases como componentes.
+
 class Direccion:
     def __init__(self, calle, numero, poblacion):
         self.calle = calle
@@ -42,6 +43,10 @@ cliente1.mostrar_info()
 # Instancia de cliente 2
 cliente2 = Cliente('David', '8-54511xx', Direccion('Gran via', 7, 'Bilbao'))
 cliente2.mostrar_info()
+
+
+# comprobra si las variables apuntan al mismo objeto
+print('Mismo objeto:', dir in cliente1.direccion)
 
 
 
