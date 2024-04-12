@@ -32,15 +32,25 @@ print(valor) # Output: None
 
 Los diccionarios se pueden modificar agregando, actualizando o eliminando pares clave-valor. Para agregar un nuevo par clave-valor, simplemente se asigna un valor a una clave que no existe previamente en el diccionario:
 
+```py
 mi_diccionario["clave_nueva"] = "valor_nuevo"
+```
+
 Para actualizar el valor de una clave existente, se asigna un nuevo valor a la clave:
 
+```py
 mi_diccionario["clave1"] = "valor_actualizado"
-Para eliminar un par clave-valor del diccionario, se utiliza la palabra clave del seguida de la clave a eliminar:
+```
 
+Para eliminar un par clave-valor del diccionario, se utiliza la palabra clave seguida de la clave a eliminar:
+
+```py
 del mi_diccionario["clave1"]
+```
+
 Es posible iterar sobre las claves, los valores o ambos (pares clave-valor) de un diccionario utilizando diferentes métodos:
 
+```py
 # Iterar sobre las claves del diccionario
 
 for clave in mi_diccionario.keys():
@@ -55,8 +65,11 @@ print(valor)
 
 for clave, valor in mi_diccionario.items():
 print(clave, valor)
+```
+
 El método update se usa para fusionar dos diccionarios en Python. Este método toma un diccionario como argumento y actualiza el diccionario original con los pares clave-valor del diccionario proporcionado como argumento. Si una clave en el diccionario original también está presente en el diccionario suministrado, el método actualizará el valor de la clave con el valor del diccionario suministrado. Si hay claves nuevas en el diccionario suministrado que no están en el diccionario original, estas claves y sus valores serán agregados al diccionario original.
 
+```py
 diccionario1 = {"a": 1, "b": 2}
 diccionario2 = {"b": 3, "c": 4}
 
@@ -65,6 +78,8 @@ diccionario2 = {"b": 3, "c": 4}
 diccionario1.update(diccionario2)
 
 print(diccionario1) # {"a": 1, "b": 3, "c": 4}
+```
+
 Como se aprecia, el valor de la clave "b" en diccionario1 fue actualizado con el valor de diccionario2, mientras que la clave "c" y su valor fueron agregados a diccionario1.
 
 En resumen, los diccionarios en Python son una estructura de datos versátil y eficiente para almacenar y organizar información en forma de pares clave-valor. Algunos de los casos de uso comunes para los diccionarios incluyen el almacenamiento de configuraciones, recuentos de frecuencia, tablas de hash y más.
