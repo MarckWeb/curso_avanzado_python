@@ -18,23 +18,26 @@ Implementa la clase CuentaBancaria con los atributos y métodos especificados, a
 encapsulación para los atributos privados.
 '''
 
+
 class CuentaBancaria:
     def __init__(self, titular, saldo_inicial):
         # Inicializar atributos privados
         self.__titular = titular
-        self.__saldo = saldo_indicado
+        self.__saldo = saldo_inicial
 
     def depositar(self, cantidad):
-        self.__saldo = cantidad
-        pass
+        self.__saldo += cantidad
+        return self.__saldo
 
     def retirar(self, cantidad):
         # Retirar cantidad del saldo si es posible
-        pass
+        if cantidad < self.__saldo:
+            self.__saldo -= cantidad
+            return self.__saldo
 
     def consultar_saldo(self):
         # Devolver saldo actual
-        pass
+        return f'Tu saldo es de {self.__saldo}'
 
 
 # Prueba de la clase CuentaBancaria
