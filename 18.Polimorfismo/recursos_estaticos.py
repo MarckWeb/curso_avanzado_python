@@ -38,7 +38,9 @@ p3 = Producto(3, 'Mouse', 12.95)
 '''
 
 # Al ser conatdor publico puedo ca,biar su valor
-Producto.__contador = 10
+# Producto.contador = 10
+# Producto.__contador = 10  # crea esa variable
+
 
 # Acceso a recurso de clase (estatico): Clase.recurso
 # print('Contador:', Producto.contador)
