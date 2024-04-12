@@ -36,18 +36,22 @@ mi_pila.push(1)
 mi_pila.push(2)
 mi_pila.push(3)
 
+# print(mi_pila.pop())
+# print(mi_pila.pop())
+# print(mi_pila.pop())
+
 # Mostrar el contenido de la pila
-print("Contenido de la pila después de añadir elementos:", mi_pila.items)
+print(mi_pila.items)
 
 # Tamaño de la pila
-print("Tamaño de la pila:", mi_pila.size())
+print(mi_pila.size())
 
 # Eliminar elemento del tope de la pila
 elemento_eliminado = mi_pila.pop()
-print("Elemento eliminado de la pila:", elemento_eliminado)
+print(elemento_eliminado)
 
 # Mostrar el contenido de la pila después de eliminar un elemento
-print("Contenido de la pila después de eliminar un elemento:", mi_pila.items)
+print(mi_pila.items)
 
 
 '''
@@ -89,14 +93,14 @@ mi_cola.push('b')
 mi_cola.push('c')
 
 # Mostrar el contenido de la cola
-print("Contenido de la cola después de añadir elementos:", mi_cola.items)
+print(mi_cola.items)
 
 # Tamaño de la cola
-print("Tamaño de la cola:", mi_cola.size())
+print(mi_cola.size())
 
 # Eliminar elemento del frente de la cola
 elemento_eliminado_cola = mi_cola.pop()
-print("Elemento eliminado de la cola:", elemento_eliminado_cola)
+print(elemento_eliminado_cola)
 
 # Mostrar el contenido de la cola después de eliminar un elemento
-print("Contenido de la cola después de eliminar un elemento:", mi_cola.items)
+print(mi_cola.items)
