@@ -2,6 +2,7 @@
     Crear clase Fecha (dia, mes y anyo)
 '''
 
+
 class Fecha:
     def __init__(self, dia, mes, anyo):
         # Varuables de Instancia
@@ -11,18 +12,20 @@ class Fecha:
         self.anyo = anyo
 
     # metodo de instancia
-    #Metodo publico
+    # Metodo publico
     def mostrar_fecha(self):
         return (f'{self.dia}/{self.mes}/{self.anyo}')
 
+
 fecha1 = Fecha(11, 4, 2024)
 fecha1.dia = 122
-print('Hoy:',fecha1.mostrar_fecha())
+print('Hoy:', fecha1.mostrar_fecha())
 
 '''
 Una clase encapsuada tiene todoas sus propiedades son privadas y se accede a
 ellas a traves de los metodos de acceso publicos: getter y setter
 '''
+
 
 class FechaEncapsulada:
     # constructor
@@ -30,9 +33,9 @@ class FechaEncapsulada:
         # Varuables de Instancia
         # son privadas: no se pueden acceder desde fuera de la clase
         '''tambien se puede cerar aqui las variables inicializadas'''
-        #self.__dia = dia
-        #self.__mes = mes
-        #self.__anyo = anyo
+        # self.__dia = dia
+        # self.__mes = mes
+        # self.__anyo = anyo
         self.__dia = 0
         self.__mes = 0
         self.__anyo = 0
@@ -49,7 +52,7 @@ class FechaEncapsulada:
     def setDia(self, dia):
         # comprobacion que el dia recibido es correcto
         # damos por bueno si el dia esta entre 1 y 30
-        if dia >=1 and dia <=31:
+        if dia >= 1 and dia <= 31:
             self.__dia = dia
         else:
             print('Dia no es valido')
@@ -60,7 +63,7 @@ class FechaEncapsulada:
     def setMes(self, mes):
         # comprobacion que el dia recibido es correcto
         # damos por bueno si el dia esta entre 1 y 30
-        if mes >= 1 and mes <=12:
+        if mes >= 1 and mes <= 12:
             self.__mes = mes
         else:
             print('Mes no es valido')
@@ -71,28 +74,29 @@ class FechaEncapsulada:
     def setAnyo(self, anyo):
         # comprobacion que el anyo recibido es correcto
         # damos por bueno si el dia esta entre 2024 y 2025
-        if anyo == 2024 or anyo==2025:
+        if anyo == 2024 or anyo == 2025:
             self.__anyo = anyo
         else:
             print('Mes no es valido')
 
     # metodo de instancia
-    #Metodo publico
+    # Metodo publico
     def mostrar_fecha(self):
         return (f'{self.__dia}/{self.__mes}/{self.__anyo}')
 
-fecha = FechaEncapsulada(50,40,-4)
-#fecha.__dia = 2
+
+fecha = FechaEncapsulada(50, 40, -4)
+# fecha.__dia = 2
 '''fecha.setDia(4)
 fecha.setMes(4)
 fecha.getAnyo(2)'''
-print('Hoy_e:',fecha.mostrar_fecha())
+print('Hoy_e:', fecha.mostrar_fecha())
 
 # accedemso atravez de los metodos de acceso
 fecha.setDia(5)
 fecha.setMes(4)
 fecha.setAnyo(2024)
-print('Hoy_encapsulado:',fecha.mostrar_fecha())
+print('Hoy_encapsulado:', fecha.mostrar_fecha())
 
 print('Acceso a variable privada:', fecha._FechaEncapsulada__dia)
 
@@ -104,7 +108,7 @@ print(dir(fecha))
 
 # comprobar si el objeto tiene el atributo otra
 print(hasattr(fecha, 'otra'))  # False
-print(hasattr(fecha, '_FechaEncapsulada__mes')) # True
+print(hasattr(fecha, '_FechaEncapsulada__mes'))  # True
 
 # saber el nombre de la clase de un objeto
 print(FechaEncapsulada.__name__)
@@ -112,5 +116,5 @@ print(type(fecha).__name__)
 
 
 # leer el valor de un atributo
-print(getattr(fecha, __mes) ) # NameError: name '__mes' is not defined
+# print(getattr(fecha, __mes) ) # NameError: name '__mes' is not defined
 print(getattr(fecha, "_FechaEncapsulada__mes"))
