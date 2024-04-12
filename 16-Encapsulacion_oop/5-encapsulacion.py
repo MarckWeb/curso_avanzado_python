@@ -5,7 +5,7 @@
 
 class Fecha:
     def __init__(self, dia, mes, anyo):
-        # Varuables de Instancia
+        # Variables de Instancia
         # son publicas se pueden acceder a ella para leer o modificar el valor
         self.dia = dia
         self.mes = mes
@@ -28,9 +28,11 @@ ellas a traves de los metodos de acceso publicos: getter y setter
 
 
 class FechaEncapsulada:
+    # _name = variable protected (ligado a la herencia)
+    # __name = variable privada
     # constructor
     def __init__(self, dia, mes, anyo):
-        # Varuables de Instancia
+        # Variables de Instancia
         # son privadas: no se pueden acceder desde fuera de la clase
         '''tambien se puede cerar aqui las variables inicializadas'''
         # self.__dia = dia
@@ -98,6 +100,7 @@ fecha.setMes(4)
 fecha.setAnyo(2024)
 print('Hoy_encapsulado:', fecha.mostrar_fecha())
 
+# otra forma de acceder a al clase privada
 print('Acceso a variable privada:', fecha._FechaEncapsulada__dia)
 
 # ver el contenido del objeto
@@ -108,11 +111,27 @@ print(dir(fecha))
 
 # comprobar si el objeto tiene el atributo otra
 print(hasattr(fecha, 'otra'))  # False
+print(hasattr(fecha, '__mes'))  # false
 print(hasattr(fecha, '_FechaEncapsulada__mes'))  # True
 
-# saber el nombre de la clase de un objeto
+# Saber el nombre de la clase  que se ha instanciado para obtener el objeto
 print(FechaEncapsulada.__name__)
 print(type(fecha).__name__)
+
+# Retorna si el objeto es instancia de esa clase
+print(isinstance(fecha, FechaEncapsulada))  # True
+# True  tupla(Clase1, Clase2)
+print(isinstance(fecha, (FechaEncapsulada, Fecha)))
+print(isinstance(fecha, FechaEncapsulada))  # False
+
+# Leer el valor de un atributo
+# print(getattr(fecha, __mes))  # NameError: name '__mes' is not defined
+print(getattr(fecha, "_FechaEncapsulada__mes"))
+print(getattr(fecha, "otra"))
+
+# Establecer el valor de un atributo
+print(setattr(fecha, "_FechaEncapsulada__mes", 8))
+print(fecha.mostrarFecha())
 
 
 # leer el valor de un atributo
