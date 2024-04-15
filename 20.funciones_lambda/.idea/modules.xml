@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/20.funciones_lambda.iml" filepath="$PROJECT_DIR$/.idea/20.funciones_lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lambda.iml" filepath="$PROJECT_DIR$/.idea/lambda.iml" />
     </modules>
   </component>
 </project>
