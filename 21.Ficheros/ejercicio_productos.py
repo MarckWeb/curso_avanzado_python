@@ -6,6 +6,8 @@ a partir del fichero productos.txt
     - el precio ha de ser numero real(float)
     -mostrar la lista con los productos
 '''
+
+
 class Producto:
     def __init__(self, id, descripcion, precio):
         self.id = int(id)
@@ -16,12 +18,17 @@ class Producto:
     def __str__(self):
         return (f"ID: {producto.id}, Descripción: {producto.descripcion}, Precio: ${producto.precio}")
 
+
 # Lista para almacenar los objetos Producto
 lista_productos = []
 
 # Leer el archivo y crear los objetos Producto
-fichero_producto =  open('productos.txt', 'r', encoding='utf-8')
+fichero_producto = open('productos.txt', 'r', encoding='utf-8')
 # print(fichero_producto.read())
+
+'''with open("fichero.txt", "wt", encoding="utf-8") as fichero:
+    fichero.write("Hola")'''
+
 for linea in fichero_producto:
     print(linea)
     # por cada linea de productos.txt elimina espacio de inicio a final
@@ -35,4 +42,3 @@ fichero_producto.close()
 # Mostrar la lista de productos
 for producto in lista_productos:
     print(producto)
-
