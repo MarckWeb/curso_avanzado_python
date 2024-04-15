@@ -1,0 +1,4 @@
+1     |    PANtalla    |    129.95
+2|    teclado   |   35.50
+3    |    raton    |    19.80
+    4|    SCANNER    |   427
