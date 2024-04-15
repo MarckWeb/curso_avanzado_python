@@ -7,11 +7,13 @@
 
 # Ejemplo 1
 '''Dada una lista de numeros y una funcion quedarnos solo con los pares'''
-numeros = list(range(1,101))
+numeros = list(range(1, 101))
+
 
 def filtrar_pares(numero):
-    if numero%2 == 0:
+    if numero % 2 == 0:
         return numero
+
 
 numeros_pares = list(filter(filtrar_pares, numeros))
 print(numeros_pares)
@@ -28,17 +30,21 @@ aprobados = list(filter(aprobar, alumnos.items()))
 print(aprobados)
 '''
 
+
 def es_aprobado(item):
     nombre, calificacion = item
     return calificacion > 5
+
 
 # Filtrar los alumnos aprobados
 aprobados = list(filter(es_aprobado, alumnos.items()))
 
 print(aprobados)
 
-#Ejemplo 3
+# Ejemplo 3
 '''Partiendo de una lista de instancias de Persona, filtrar para quedarnos solo con los mayores de edad'''
+
+
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
@@ -47,8 +53,9 @@ class Persona:
     def __str__(self):
         return f"Persona(nombre={self.nombre}, edad={self.edad})"
 
+
 def personas_mayores(persona):
-    print('..',persona)
+    print('..', persona)
     persona_mayor = persona.edad
     return persona_mayor >= 18
 
@@ -66,7 +73,13 @@ personas_mayores = list(filter(personas_mayores, personas))
 for persona in personas_mayores:
     print(persona.nombre, persona.edad)
 
-#Ejemplo 4
+# Ejemplo 4
 '''Con la palabra ayuntamiento devolver las letra que no tengan aeiuo'''
-def constantes (letras):
-    return letra not in 'aeiou'
+
+
+def consonantes(letras):
+    return letras not in 'aeiou'
+
+
+palabra = ''.join(list(filter(consonantes, 'ayuntamiento')))
+print(palabra)
