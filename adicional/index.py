@@ -1,36 +1,4 @@
-print("Bienvenido a ... ")
-print("""
-
-.-..-.       _ .---.          .-.
-: :: :      :_;: .; :         : :
-: :: :,-.,-..-.:   .' .--.  .-' :
-: :; :: ,. :: :: :.`.' '_.'' .; :
-`.__.':_;:_;:_;:_;:_;`.__.'`.__.'
-                                 
-                                 
-""")
-
-
-# http://www.network-science.de/ascii/
-# https://www.coursera.org/learn/aprendiendo-programar-python/lecture/i9kQu/2-1-1-que-valores-puedo-usar-tipos-de-datos
-
-"""Fin Módulo 2: Recolección de datos de usuario y publicación de mensajes de estado.
-
-Fin Módulo 3: Integración de un menú que permita efectuar distintas acciones sobre la red.
-
-Fin Módulo 4: Separación del código en módulos que agregan distintas funciones y hacen el código más fácil de entender y modificar.
-
-Fin Módulo 5: Integración de uso de archivos para recordar y almacenar los datos de un usuario.
-
-Fin Módulo 6: Incorporación de listas de amigos y transmisión de mensajes entre ellos."""
-
-"""En Python, los operadores se evalúan siguiendo el orden de precedencia estándar de las operaciones aritméticas:
-
-1-Paréntesis ()
-2-Exponentes **
-3-Multiplicación *, División /, División entera //, Módulo %
-4-Suma +, Resta -
-"""
+'''operaciones segun la prioridad de los signos'''
 # realizamos la operacion dentro de los parentesis, pero tambien vemos que dentro de los parentesis hay division entera que se realiza la operacion antes de las sumas y restas
 
 operacion = (3+5//4-2)-2**4+3*(7-2)
