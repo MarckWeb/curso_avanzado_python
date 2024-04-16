@@ -1,0 +1,44 @@
+from datetime import datetime
+
+# crear un objeto datetime
+
+fecha_hora = datetime(2021, 11, 25, 6, 35, 43, 58)
+print(fecha_hora)  # 2021-11-25 06:35:43.000058
+
+# obtenemos sola la fecha
+print('Fecha', fecha_hora.date())  # Fecha 2021-11-25
+
+# obtenemos solo al hora
+print('Hora', fecha_hora.time())  # Hora 06:35:43.000058
+
+# Fecha y hora actual
+print('Ahora', datetime.today())  # Ahora 2024-04-16 14:33:38.521970
+print('Ahora', datetime.now())  # Ahora 2024-04-16 14:34:13.165017
+print('Ahora', datetime.utcnow())  # Ahora 2024-04-16 14:34:13.165017
+
+
+# Obtener el timestamp (marca de tiempo)
+
+print('Marca de tiempo', fecha_hora.timestamp())
+# Marca de tiempo 1637818543.000058
+
+
+# Establecer nuestro propio formato de fechas
+print(fecha_hora.date().strftime('%d/%m/%y'))  # 25/11/21
+print(fecha_hora.date().strftime('%d/%m/%Y'))  # 25/11/2021
+
+# Establecer nuestro po¡ropio formato de hora
+print(fecha_hora.time().strftime('%H:%M:%S'))  # 06:35:43
+
+# Establecer nuestro propio formato de fecha y hora
+print(fecha_hora.strftime('%d/%m/%Y - %H:%M:%S'))  # 25/11/2021 - 06:35:43
+
+# 25/November/2021 - 06:35:43
+print(fecha_hora.strftime('%d/%B/%Y - %H:%M:%S'))
+
+print(datetime.strptime('20/4/2024 14:45:00',
+      '%d/%m/%Y %H:%M:%S'))  # 2024-04-20 14:45:00
+
+
+fecha = datetime.strptime('20/4/2024 14:45:00', '%d/%m/%Y %H:%M:%S')
+print(fecha.strftime('%d %B %Y - %H:%M:%S'))  # 20 April 2024 - 14:45:00
