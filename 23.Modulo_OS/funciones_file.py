@@ -1,4 +1,5 @@
 import os
+# import shutil
 
 # Eliminar el directorio
 os.rmdir('mi_carpeta')
@@ -18,6 +19,7 @@ os.chdir('dir1/dir2/')
 # os.chdir('dir2') # FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'dir2'
 
 # En que directorio estoy
+os.chdir('../..')
 print('estoy en,', os.getcwd())
 
 # ejecutar cnn la funcion system
@@ -25,3 +27,5 @@ os.system('mkdir otro_directorio')
 
 # Mostrar la fecha y hora del sistema
 print(os.system('date'))
+
+# shutil.rmtree('dir1')

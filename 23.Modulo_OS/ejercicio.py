@@ -2,7 +2,7 @@ import shutil
 import os
 
 # Crear la estructura de directorios
-os.makedirs('dir1/dir2/dir3')
+# os.makedirs('dir1/dir2/dir3')
 
 # Eliminar dir1 y todos sus contenidos
 shutil.rmtree('dir1')
