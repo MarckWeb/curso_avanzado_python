@@ -15,7 +15,7 @@ print(text_cal.formatmonth(2024, 4))
 # Usando HTMLCalendar
 html_cal = calendar.HTMLCalendar(calendar.SUNDAY)
 print(html_cal.formatmonth(2024, 4))
-# Abrimso en un archivo html
+# Abrimos en un archivo html
 # with open("calendar.html", "w") as file:
 #     file.write(html_cal.formatyear(2024))
 
