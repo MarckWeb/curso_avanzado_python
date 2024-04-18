@@ -21,3 +21,16 @@ print(df_desde_dict1.loc[[2, 4]])
 
 # Mostrar desde el indice de la fila 2 a la fila 4
 print(df_desde_dict1.loc[2:4])
+
+# Solo la nota de pedro
+print(df_desde_dict1.loc[2, ['Notas']])
+print(df_desde_dict1.loc[[2, 4], ['Notas']])
+print(df_desde_dict1['Notas'].loc[2])
+
+
+print('.-----------------------------.')
+# con rangos
+print(df_desde_dict1.loc[2:4]['Notas'])
+
+# Nonmber y apellido de ana
+# print(df_desde_dict1.loc[3][['nombre', 'Apellido']])
