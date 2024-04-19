@@ -1,4 +1,3 @@
-"""Module providing a function printing python version."""
 # Números Enteros: Crea una variable que contenga un número entero
 ENTERO = 10
 print('Numero Entero', ENTERO)

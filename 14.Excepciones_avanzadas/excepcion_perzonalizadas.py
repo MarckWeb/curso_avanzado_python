@@ -2,7 +2,7 @@
 
 # todas la excepciones en python con clases que estan heredando
 # directa o indirectamente d ela clase BaseExcepcion
-# Nuestra excepcion personalizada sera una ckase que herede de Excepcion
+# Nuestra excepcion personalizada sera una clase que herede de Excepcion
 
 
 class NegativoError(Exception):  # NegativeError es una Excepcion
