@@ -99,6 +99,3 @@ filtro = (df_outer['Nombre'].str.len() > 5) & (df_outer['Precio'] < 100)
 print('----TABLA_FILTRADO_X_Precio < 100------')
 print(df_outer[filtro])
 print('-' * 50)
-
-'''Utilizamos DROP Borrar'''
-#
