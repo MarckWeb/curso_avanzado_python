@@ -47,6 +47,7 @@ print(p3 + p4)  # con __add__ => 57.75
 
 
 '''
+__hash__ y __eq__ van juntos siempres para operar
 En Metodo.__hash__
 '''
 '''
