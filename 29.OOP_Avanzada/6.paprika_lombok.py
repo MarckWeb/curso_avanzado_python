@@ -19,21 +19,3 @@ fecha_erronea.dia = -12
 fecha_erronea.mes = 54
 
 print(fecha_buena == fecha_erronea and fecha_buena is fecha_erronea)  # True ✅
-
-# fecha_buena = FechaEncapsulada(22, 4, 2024)
-# print(fecha_buena)
-
-# try:
-#     fecha_erronea = FechaEncapsulada(-12, 54, 2)
-# except ValueError as e:
-#     print(e)
-
-# try:
-#     fecha_erronea.dia = -12
-# except ValueError as e:
-#     print(e)
-
-# try:
-#     fecha_erronea.mes = 54
-# except ValueError as e:
-#     print(e)
