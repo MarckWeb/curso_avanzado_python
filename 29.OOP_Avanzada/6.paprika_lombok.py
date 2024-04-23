@@ -17,5 +17,9 @@ print(fecha_erronea)
 
 fecha_erronea.dia = -12
 fecha_erronea.mes = 54
+fecha_erronea.mes = 10
+print(fecha_erronea)
+
+print('Dia', fecha_buena.dia)
 
 print(fecha_buena == fecha_erronea and fecha_buena is fecha_erronea)  # True ✅
