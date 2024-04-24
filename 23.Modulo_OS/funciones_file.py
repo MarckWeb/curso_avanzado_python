@@ -28,4 +28,7 @@ os.system('mkdir otro_directorio')
 # Mostrar la fecha y hora del sistema
 print(os.system('date'))
 
+# Obtener la ruta del directorio actual
+ruta_actual = os.getcwd()
+print(ruta_actual)
 # shutil.rmtree('dir1')
