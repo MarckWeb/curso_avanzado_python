@@ -1,0 +1,39 @@
+{
+   "alumnos":[
+      {
+         "id": 1,
+         "nombre": "Juan",
+         "apellido": "Perez",
+         "nota": 8.5,
+         "repetir": false
+       },
+       {
+         "id": 2,
+         "nombre": "María",
+         "apellido": "Gomez",
+         "nota": 6.2,
+         "repetir": true
+       },
+       {
+         "id": 3,
+         "nombre": "Carlos",
+         "apellido": "López",
+         "nota": 9.8,
+         "repetir": false
+       },
+       {
+         "id": 4,
+         "nombre": "Ana",
+         "apellido": "Martínez",
+         "nota": 7.9,
+         "repetir": false
+       },
+       {
+         "id": 5,
+         "nombre": "Pedro",
+         "apellido": "González",
+         "nota": 5.4,
+         "repetir": true
+       }
+   ]
+}
