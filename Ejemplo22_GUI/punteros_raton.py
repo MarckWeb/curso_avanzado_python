@@ -1,0 +1,26 @@
+import tkinter as tk
+
+ventana = tk.Tk()
+ventana.title("Ejemplos de diferentes cursores")
+ventana.geometry("200x300+500+200")
+
+label1 = tk.Label(ventana, text='arrow', cursor='arrow')
+label1.pack()
+label2 = tk.Label(ventana, text='clock', cursor='clock')
+label2.pack()
+label3 = tk.Label(ventana, text='heart', cursor='heart')
+label3.pack()
+label4 = tk.Label(ventana, text='cross', cursor='cross')
+label4.pack()
+label5 = tk.Label(ventana, text='circle', cursor='circle')
+label5.pack()
+label6 = tk.Label(ventana, text='dotbox', cursor='dotbox')
+label6.pack()
+label7 = tk.Label(ventana, text='fleur', cursor='fleur')
+label7.pack()
+label8 = tk.Label(ventana, text='star', cursor='star')
+label8.pack()
+label9 = tk.Label(ventana, text='spider', cursor='spider')
+label9.pack()
+
+ventana.mainloop()
