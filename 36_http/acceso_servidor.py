@@ -22,7 +22,7 @@ print("cabecera =>", cabeceras['Content-Type'])
 print(respuesta.headers['Connection'])
 
 # Mostrar el texto de la respuesta
-# print(respuesta.text)  # muestra todo el html
+print(respuesta.text)  # muestra todo el html
 
 
 # Manejo de errores
@@ -46,8 +46,15 @@ else:
 
 # Cuando la escritura de la url esta mal escrita
 try:
-    respuesta = requests.get("http://localhost:8010")
+    respuesta = requests.get("http:/localhost:8010")
 except requests.exceptions.InvalidURL:
     print('Error de URL')
 else:
     print('Conexion ok')
+
+# Ver todas las excepciones
+# print(requests.exceptions)
+print("Todas las excepciones disponibles en 'requests.exceptions':")
+for exception_name in dir(requests.exceptions):
+    if not exception_name.startswith("_"):
+        print(exception_name)
