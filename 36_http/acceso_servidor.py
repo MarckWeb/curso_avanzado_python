@@ -23,3 +23,31 @@ print(respuesta.headers['Connection'])
 
 # Mostrar el texto de la respuesta
 # print(respuesta.text)  # muestra todo el html
+
+
+# Manejo de errores
+
+try:
+    respuesta = requests.get("http://localhost:8080", timeout=1)
+except requests.exceptions.Timeout:
+    print('Error de time out')
+else:
+    print('Conexion ok')
+
+
+# Capturar un error de conexion = cuando la url es incorrecta
+
+try:
+    respuesta = requests.get("http://localhost:8010")
+except requests.exceptions.ConnectionError:
+    print('Error de conexion')
+else:
+    print('Conexion ok')
+
+# Cuando la escritura de la url esta mal escrita
+try:
+    respuesta = requests.get("http://localhost:8010")
+except requests.exceptions.InvalidURL:
+    print('Error de URL')
+else:
+    print('Conexion ok')
