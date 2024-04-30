@@ -128,5 +128,12 @@ print('-'*50)
 # Eliminar los precios con precios superior a los 50
 cursor.execute("DELETE FROM PRODUCTOS where precio > 50")
 producto = cursor.fetchall()
+
+cursor.execute('select * from PRODUCTOS')
+productos = cursor.fetchall()
+for prod in productos:
+    print(prod)
+print('-'*50)
+
 # Importante el commit
 conexion.commit()
