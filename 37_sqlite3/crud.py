@@ -78,5 +78,55 @@ for precio in precios:
     print(precio)
 print('-'*50)
 
+# Mostrar los productos que comienzan por la letra M
+cursor.execute('select * from PRODUCTOS where description LIKE("M%")')
+producto_m = cursor.fetchone()
+print(producto_m)
+
+# Ejecutar la consulta para buscar productos que contengan la letra 'e' y cuyo precio sea menor que 50 euros
+cursor.execute(
+    "SELECT * FROM PRODUCTOS WHERE description LIKE '%e%' AND precio < 50"
+)
+# Obtener los resultados
+productos = cursor.fetchall()
+print('-'*50)
+
+# Imprimir los resultados
+for producto in productos:
+    print(producto)
+print('-'*50)
+
+
+''''----MODIFICAR DATOS---'''
+# Subir un 10% el precio de la impresora
+# Obtener el precio actual de la impresora
+# cursor.execute('SELECT precio FROM PRODUCTOS WHERE description = "Impresora"')
+# dato = cursor.fetchone()
+# # Calcular el nuevo precio aumentado en un 10%
+# precio = dato[0] * 1.1
+
+# # Ejecutar la consulta para actualizar el precio de la impresora
+# cursor.execute(
+#     "UPDATE PRODUCTOS SET precio = ? WHERE description = 'Impresora'",
+#     (precio,)
+# )
+
+# FORMA CORTA
+cursor.execute(
+    "UPDATE productos SET precio = precio*1.1 WHERE description = 'Impresora'")
+
+# Poner las descripciones en mayuscula de todos los productos
+cursor.execute("UPDATE PRODUCTOS SET description = UPPER(description)")
+cursor.execute('select * from PRODUCTOS')
+productos = cursor.fetchall()
+for prod in productos:
+    print(prod)
+print('-'*50)
+
+
+'''------ELIMINAR DATOS-----'''
+# Eliminar los precios con precios superior a los 50
+cursor.execute("DELETE FROM PRODUCTOS where precio > 50")
+producto = cursor.fetchall()
 # Importante el commit
 conexion.commit()
