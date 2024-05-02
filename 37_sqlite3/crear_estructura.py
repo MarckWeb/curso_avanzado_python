@@ -10,7 +10,7 @@ cursor = conexion.cursor()
 
 # Crear la tabla de productos
 cursor.execute(
-    'CREATE IF NOT EXISTS PRODUCTOS PRODUCTOS(codigo INTEGER PRIMARY KEY, description TEXT, precio REAL)'
+    'CREATE TABLE IF NOT EXISTS PRODUCTOS(codigo INTEGER PRIMARY KEY, description TEXT, precio REAL)'
 )
 
 # Importante el commit
