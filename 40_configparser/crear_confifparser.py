@@ -12,15 +12,17 @@ config['sqlite'] = {
 config['mysql'] = {
     'host': "localhost",
     'user': 'root',
-    'password': '',
+    'port': '3307',
+    'password': '123456',
     'database': 'cetelem'
 }
+
 config['mariadb'] = {
     'host': 'msi.h.filess.io',
-    'Puerto': '3305',
-    'Usuario': 'Lab_freedomill',
-    'Database': 'Lab_freedomill',
-    'Password': '217050b98031c1ee067173e1f38c58727b47623c',
+    'port': '3305',
+    'user': 'Lab_freedomill',
+    'database': 'Lab_freedomill',
+    'password': '217050b98031c1ee067173e1f38c58727b47623c',
 }
 
 

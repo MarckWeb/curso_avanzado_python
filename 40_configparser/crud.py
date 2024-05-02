@@ -13,6 +13,7 @@ config.read(filenames='config.ini')
 mydb = mysql.connector.connect(
     host=config['mysql']['host'],
     user=config['mysql']['user'],
+    port=config['mysql']['port'],
     password=config['mysql']['password'],
     database=config['mysql']['database']
 )
