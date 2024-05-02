@@ -11,14 +11,14 @@ En este repositorio, encontrarás todos mis apuntes y notas que tomé mientras r
 ---
 
 ## Contenido
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Introducción a Python:** Conceptos básicos, instalación y configuración del entorno de desarrollo.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Estructuras de datos:** Listas, tuplas, diccionarios y conjuntos en Python.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Control de flujo:** Uso de condicionales y bucles en Python.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Funciones:** Definición, parámetros, y alcance de las funciones en Python.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Módulos y paquetes:** Organización de código en módulos y paquetes para facilitar la reutilización.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Programación orientada a objetos:** Clases, herencia, polimorfismo y encapsulamiento en Python.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Manejo de excepciones:** Identificación y manejo de errores en Python.
-- <img src="https://api.iconify.design/simple-line-icons:note.svg" width="20"/> **Librerías estándar:** Exploración de las librerías estándar de Python para diversas tareas.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Introducción a Python:** Conceptos básicos, instalación y configuración del entorno de desarrollo.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Estructuras de datos:** Listas, tuplas, diccionarios y conjuntos en Python.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Control de flujo:** Uso de condicionales y bucles en Python.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Funciones:** Definición, parámetros, y alcance de las funciones en Python.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Módulos y paquetes:** Organización de código en módulos y paquetes para facilitar la reutilización.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Programación orientada a objetos:** Clases, herencia, polimorfismo y encapsulamiento en Python.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Manejo de excepciones:** Identificación y manejo de errores en Python.
+- <img src="https://api.iconify.design/noto:light-bulb.svg" width="20" style="color:#FBC02D"/> **Librerías estándar:** Exploración de las librerías estándar de Python para diversas tareas.
 
 ---
 
