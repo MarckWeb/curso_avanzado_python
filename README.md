@@ -25,6 +25,10 @@ En este repositorio, encontrarás todos mis apuntes y notas que tomé mientras r
 ## ¿Cómo utilizar este repositorio?
 
 Si estás aprendiendo Python o necesitas repasar algún tema, puedes explorar los archivos de este repositorio. Los apuntes están organizados por temas y son fácilmente accesibles para su lectura.
+```bash
+git clone https://github.com/MarckWeb/curso_avanzado_python.git
+```
+
 
 ### Conceptos Básicos
 
