@@ -1,8 +1,12 @@
-# Mis Apuntes de Python
+<h1 style="text-align:center;">Mis Apuntes de Python</h1>
+
 ¡Bienvenido a mi repositorio de apuntes de Python!
 
 En este repositorio, encontrarás todos mis apuntes y notas que tomé mientras realizaba el curso de Python. Desde conceptos básicos hasta temas más avanzados, aquí encontrarás recursos útiles para aprender y repasar Python.
-![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+
+<div style="text-align:center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" width="200"/>
+</div>
 
 Contenido
 Introducción a Python: Conceptos básicos, instalación y configuración del entorno de desarrollo.
