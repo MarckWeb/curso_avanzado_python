@@ -26,6 +26,96 @@ En este repositorio, encontrarás todos mis apuntes y notas que tomé mientras r
 
 Si estás aprendiendo Python o necesitas repasar algún tema, puedes explorar los archivos de este repositorio. Los apuntes están organizados por temas y son fácilmente accesibles para su lectura.
 
+### Conceptos Básicos
+
+#### Variables
+
+Las variables son contenedores para almacenar datos en un programa. En Python, una variable se crea cuando le asignas un valor.
+
+```python
+# Crear una variable llamada 'nombre' y asignarle el valor "Juan"
+nombre = "Juan"
+
+# Imprimir el valor de la variable 'nombre'
+print(nombre)
+```
+#### Condicionales
+
+Los condicionales en Python se utilizan para tomar decisiones basadas en ciertas condiciones. Se pueden utilizar las palabras clave if, elif (opcional) y else.
+
+```python
+# Verificar si un número es mayor, menor o igual a cero
+numero = 10
+
+if numero > 0:
+    print("El número es mayor que cero.")
+elif numero < 0:
+    print("El número es menor que cero.")
+else:
+    print("El número es igual a cero.")
+```
+
+#### Listas
+
+Las listas son una estructura de datos en Python que permite almacenar una colección de elementos ordenados y modificables.
+
+```python
+# Crear una lista de nombres
+nombres = ["Ana", "Juan", "María"]
+
+# Imprimir la lista de nombres
+print(nombres)
+```
+
+#### Funciones
+
+Las funciones son bloques de código reutilizables que realizan una tarea específica. En Python, una función se define con la palabra clave def.
+
+```python
+# Definir una función para sumar dos números
+def suma(a, b):
+    return a + b
+
+# Llamar a la función y mostrar el resultado
+resultado = suma(3, 5)
+print("El resultado de la suma es:", resultado)
+```
+#### Conjuntos
+
+Los conjuntos en Python son colecciones desordenadas de elementos únicos
+
+```python
+# Crear un conjunto de números
+numeros = {1, 2, 3, 4, 5}
+
+# Imprimir el conjunto de números
+print(numeros)
+```
+#### Diccionarios
+
+Los diccionarios en Python son estructuras de datos que permiten almacenar pares clave-valor.
+
+```python
+# Crear un diccionario de frutas y sus precios
+precios_frutas = {"manzana": 2.50, "banana": 1.80, "naranja": 3.20}
+
+# Imprimir el diccionario de precios de frutas
+print(precios_frutas)
+```
+
+#### Tuplas
+
+Las tuplas en Python son colecciones ordenadas e inmutables de elementos.
+
+```python
+# Crear una tupla de coordenadas
+coordenadas = (3, 5)
+
+# Imprimir las coordenadas
+print(coordenadas)
+```
+
+
 
 
 
