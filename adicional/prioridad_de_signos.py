@@ -19,23 +19,6 @@ print(tiempo)
 distancia = 0.01
 
 
-def velocidad(distancia, tiempo):
-    resultado = ""
-    # desde aquí hacia abajo debes modificar el programa
-    # modifica la variable resultado
-    # recuerda que los datos están en las variables distancia y tiempo
-    resultado = "la velocidad es " + \
-        str(distancia / tiempo * 3600)+"km/h o " + \
-        str(distancia * 1000 / tiempo)+"m/s"
-    return resultado
-
-
-print(velocidad(100, 1))
-
-# 68/1.83^2 es 20.305174833527424 pero tu programa calculó 68.0.
-# Prueba de nuevo!
-
-
 def xor(a, b):
     xor = False
     # desde aquí hacia abajo debes modificar el programa

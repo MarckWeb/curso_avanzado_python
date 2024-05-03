@@ -1,6 +1,4 @@
 
-
-# En este mÃ³dulo estÃ¡n todos las funciones  que hemos creado hasta ahora
 import red as Red
 
 
@@ -16,7 +14,6 @@ if Red.existe_archivo(nombre+".user"):
      amigos, estado, muro) = Red.leer_usuario(nombre)
 
 else:
-    # En caso que el usuario no exista, consultamos por sus datos tal como lo hacÃ­amos antes
     print()
     edad = Red.obtener_edad()
     (estatura_m, estatura_cm) = Red.obtener_estatura()

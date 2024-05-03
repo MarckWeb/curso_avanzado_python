@@ -1,4 +1,3 @@
-# El mÃ³dulo 'os' nos permitirÃ¡ consultar si un archivo existe.
 import os
 
 
@@ -54,7 +53,7 @@ def obtener_lista_amigos():
 def mostrar_perfil(nombre, edad, estatura_m, estatura_cm, sexo, pais, amigos):
     print("--------------------------------------------------")
     print("Nombre:   ", nombre)
-    print("Edad:     ", edad, "aÃ±os")
+    print("Edad:     ", edad, "años")
     print("Estatura: ", estatura_m, "m y ", estatura_cm, "centÃ­metros")
     print("Sexo:     ", sexo)
     print("PaÃ­s:     ", pais)
