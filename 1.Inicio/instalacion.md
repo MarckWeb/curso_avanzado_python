@@ -15,3 +15,5 @@ luego nos vamos a al archivo de descargas y ejecutamos para que se descargue el 
 ## Instalacion de python con VSC
 
 una vez que tengas instalado Visula Stud Code agrega o instala el pluging python de microsoft
+
+**Y listo a empezar!!!**
