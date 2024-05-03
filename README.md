@@ -30,9 +30,9 @@ git clone https://github.com/MarckWeb/curso_avanzado_python.git
 ```
 
 
-### Conceptos Básicos
+## Conceptos Básicos
 
-#### Variables
+### Variables
 
 Las variables son contenedores para almacenar datos en un programa. En Python, una variable se crea cuando le asignas un valor.
 
@@ -43,7 +43,7 @@ nombre = "Juan"
 # Imprimir el valor de la variable 'nombre'
 print(nombre)
 ```
-#### Condicionales
+### Condicionales
 
 Los condicionales en Python se utilizan para tomar decisiones basadas en ciertas condiciones. Se pueden utilizar las palabras clave if, elif (opcional) y else.
 
@@ -59,7 +59,7 @@ else:
     print("El número es igual a cero.")
 ```
 
-#### Listas
+### Listas
 
 Las listas son una estructura de datos en Python que permite almacenar una colección de elementos ordenados y modificables.
 
@@ -71,7 +71,7 @@ nombres = ["Ana", "Juan", "María"]
 print(nombres)
 ```
 
-#### Funciones
+### Funciones
 
 Las funciones son bloques de código reutilizables que realizan una tarea específica. En Python, una función se define con la palabra clave def.
 
@@ -84,7 +84,7 @@ def suma(a, b):
 resultado = suma(3, 5)
 print("El resultado de la suma es:", resultado)
 ```
-#### Conjuntos
+### Conjuntos
 
 Los conjuntos en Python son colecciones desordenadas de elementos únicos
 
@@ -95,7 +95,7 @@ numeros = {1, 2, 3, 4, 5}
 # Imprimir el conjunto de números
 print(numeros)
 ```
-#### Diccionarios
+### Diccionarios
 
 Los diccionarios en Python son estructuras de datos que permiten almacenar pares clave-valor.
 
@@ -107,7 +107,7 @@ precios_frutas = {"manzana": 2.50, "banana": 1.80, "naranja": 3.20}
 print(precios_frutas)
 ```
 
-#### Tuplas
+### Tuplas
 
 Las tuplas en Python son colecciones ordenadas e inmutables de elementos.
 
