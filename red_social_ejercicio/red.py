@@ -19,13 +19,13 @@ def obtener_nombre():
 
 
 def obtener_edad():
-    agno = int(input("Para preparar tu perfil, dime en quÃ© aÃ±o naciste. "))
+    agno = int(input("Para preparar tu perfil, dime en que año naciste. "))
     return 2017-agno-1
 
 
 def obtener_estatura():
     estatura = float(input(
-        "CuÃ©ntame mÃ¡s de ti, para agregarlo a tu perfil. Â¿CuÃ¡nto mides? DÃ­melo en metros. "))
+        "Cuentame mas de ti, para agregarlo a tu perfil. ¿Cuanto mides? Dimelo en metros. "))
     metros = int(estatura)
     centimetros = int((estatura - metros)*100)
     return (metros, centimetros)
@@ -39,7 +39,7 @@ def obtener_sexo():
 
 
 def obtener_pais():
-    pais = input("Indica tu paÃ­s de nacimiento: ")
+    pais = input("Indica tu pais de nacimiento: ")
     return pais
 
 
@@ -54,9 +54,9 @@ def mostrar_perfil(nombre, edad, estatura_m, estatura_cm, sexo, pais, amigos):
     print("--------------------------------------------------")
     print("Nombre:   ", nombre)
     print("Edad:     ", edad, "años")
-    print("Estatura: ", estatura_m, "m y ", estatura_cm, "centÃ­metros")
+    print("Estatura: ", estatura_m, "m y ", estatura_cm, "centimetros")
     print("Sexo:     ", sexo)
-    print("PaÃ­s:     ", pais)
+    print("Pais:     ", pais)
     print("Amigos:   ", len(amigos))
     print("--------------------------------------------------")
 
@@ -68,15 +68,15 @@ def opcion_menu():
     print("  3. Mostrar los datos de perfil")
     print("  4. Actualizar el perfil de usuario")
     print("  0. Salir")
-    opcion = int(input("Ingresa una opciÃ³n: "))
+    opcion = int(input("Ingresa una opcion: "))
     while opcion < 0 or opcion > 5:
-        print("No conozco la opciÃ³n que has ingresado. IntÃ©ntalo otra vez.")
-        opcion = int(input("Ingresa una opciÃ³n: "))
+        print("No conozco la opcion que has ingresado. Intentalo otra vez.")
+        opcion = int(input("Ingresa una opcion: "))
     return opcion
 
 
 def obtener_mensaje():
-    mensaje = input("Ahora vamos a publicar un mensaje. Â¿QuÃ© piensas hoy? ")
+    mensaje = input("Ahora vamos a publicar un mensaje. Â¿Ques piensas hoy? ")
     return mensaje
 
 

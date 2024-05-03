@@ -23,7 +23,7 @@ else:
     estado = ""
     muro = []
 
-# En ambos casos, al llegar aquÃ­ ya conocemos los datos del usuario
+# En ambos casos, al llegar aqui­ ya conocemos los datos del usuario
 print("Muy bien. Estos son los datos de tu perfil.")
 Red.mostrar_perfil(nombre, edad, estatura_m, estatura_cm, sexo, pais, amigos)
 Red.mostrar_mensaje(nombre, estado)
@@ -54,14 +54,4 @@ while opcion != 0:
                              estatura_cm, sexo, pais, amigos, estado, muro)
         print("Archivo", nombre+".user", "guardado")
 
-print("Gracias por usar Mi Red. Â¡Hasta pronto!")
-
-# Prueba este programa, e intenta enviar un mensaje a los amigos que pertenecen a tu lista.
-# Te invitamos a ejecutar los siguientes desafÃ­os:
-# 1. Agrega una opciÃ³n que permita agregar un nuevo amigo a tu lista. En este caso no utilizaremos confirmaciÃ³n
-#   de parte del destinatario, de manera que la relaciÃ³n de amistad puede perfectamente existir en un solo sentido.
-#
-# 2. Agrega una opciÃ³n que permita mostrar los Ãºltimos estados de todos los amigos.
-#   Ten en cuenta que esto no es equivalente a publicar los mensajes de tu muro, sino que necesitarÃ¡s
-#   leer una lÃ­nea particular de los archivos de cada usuario en tu lista de amigos.
-#
+print("Gracias por usar Mi Red.¡Hasta pronto!")
