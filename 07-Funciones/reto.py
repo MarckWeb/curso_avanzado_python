@@ -131,4 +131,4 @@ def fx(n):
 fac = 0.5
 fx(3)
 
-# en este caso el scope de fx tomara el valro de fac, pero si queremos aumentar o cambiar el nuemro de fac dara error, otro caso si agregamos una nueva variable dentro de la funcion como fac sera una variable local
+# en este caso el scope de fx tomara el valor de fac, pero si queremos aumentar o cambiar el nuemro de fac dara error, otro caso si agregamos una nueva variable dentro de la funcion como fac sera una variable local
