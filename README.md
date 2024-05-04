@@ -118,7 +118,7 @@ coordenadas = (3, 5)
 # Imprimir las coordenadas
 print(coordenadas)
 ```
-
+Dentro de mis apuntes encontraras todo un contenido de lo que es python avanzado, ademas ejercicios de ciencia de datos, programacion orientada a objetos, manejo de excepciones y mas!!!
 
 
 
