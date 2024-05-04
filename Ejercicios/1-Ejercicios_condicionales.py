@@ -22,6 +22,65 @@ print(dividir(10, 0))
 '''
 2-. Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
 '''
+numero = int(input('Escribi un numero:'))
+
+if numero % 2 == 0:
+    print('el numero es par')
+else:
+    print('el numero es impar')
+
+'''3-.Escribir un programa, cada segundo debe mostrar la palabra mississippi'''
+for i in range(1, 6):
+    print(i, "Mississippi")
+    time.sleep(1)
+
+print('Lista o no, aquí vengo!')
+
+
+'''
+ 4-.Escribe un programa que muestre por consola (con un print) los
+  números de 1 a 100 (ambos incluidos y con un salto de línea entre
+  cada impresión), sustituyendo los siguientes:
+  - Múltiplos de 3 por la palabra "fizz".
+  - Múltiplos de 5 por la palabra "buzz".
+  - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
+ '''
+
+# Ejercicio con condicion ternario
+
+
+def fizzBuzz():
+    for i in range(101):
+        result = 'Fizz' * (i % 3 == 0) + 'Buzz' * (i % 5 == 0)
+        print(result if result else i)
+
+
+fizzBuzz()
+
+# Ejercicio con condicion if, elif
+
+
+def fizzBuzz():
+    for i in range(101):
+        output = ''
+        divisibleForTHree = i % 3 == 0
+        divisibleForFive = i % 5 == 0
+        if divisibleForTHree and divisibleForFive:
+            output = 'FizzBuzz'
+        elif divisibleForTHree:
+            output = 'Fizz'
+        elif divisibleForFive:
+            output = 'Buzz'
+        else:
+            output = i
+        print(output)
+
+
+fizzBuzz()
+
+'''
+5-. Calcular la la velocidad
+'''
 
 
 def velocidad(distancia, tiempo):
@@ -33,10 +92,3 @@ def velocidad(distancia, tiempo):
 
 
 print(velocidad(100, 1))
-
-
-for i in range(1, 6):
-    print(i, "Mississippi")
-    time.sleep(1)
-
-print('Lista o no, aquí vengo!')
