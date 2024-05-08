@@ -78,3 +78,5 @@ python manage.py runserver
 9. Creamos un archivo dentro de my_store/my_store views.py, esto mas por temas de convencion
 
 ahora si empezar a codificar!!!
+
+https://codigofacilito.com/videos/hola-mundo-fd24c295-20a2-4a9f-9bd9-b4469bc7456f
