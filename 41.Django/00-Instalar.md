@@ -39,3 +39,42 @@ source env_django/scripts/activate
 ```
 
 la terminal cambiara el promt a (env_django), indica que se esta trabajando dentro de un entorno virtual.
+
+6. Ahora si instalamos Django
+
+```bash
+# en el momento de mis apuntes este era la version
+py -m pip install Django==5.0.6
+```
+
+7. Crea un nuevo proyecto Django: Utiliza el comando: django-admin startproject <nombre_del_proyecto> para crear un nuevo proyecto Django en el directorio actual.
+
+```bash
+django-admin startproject my_store
+```
+
+Verificamos dentro del directorio creado my_store, y vemos que se ha creado un directorio con el mismo nombre y un archivo manage.py
+
+### Archivos Principales de un Proyecto Django
+
+- 7.1. **init**.py: Este archivo permite convertir al directorio creado en un módulo de Python.
+
+- 7.2. settings.py: Aquí se configuran las opciones y ajustes específicos para tu proyecto Django, como la base de datos, las aplicaciones instaladas, la configuración del servidor de correo electrónico, entre otros.
+
+- 7.3. urls.py: Define todas las URL de tu proyecto y mapea las URL a las vistas correspondientes que manejan las solicitudes HTTP entrantes.
+
+- 7.4. wsgi.py: Este archivo proporciona una interfaz entre tu aplicación web Django y un servidor web, permitiendo el despliegue de tu aplicación en servidores web compatibles con WSGI.
+
+- 7.5. manage.py: Una utilidad de línea de comandos que te permite ejecutar varios comandos para administrar tu proyecto Django, como iniciar el servidor de desarrollo, crear y aplicar migraciones de base de datos, crear un superusuario y ejecutar pruebas.
+
+8. Ejecutamos el servidor de desarrollo de Django con el siguiente comando:
+
+NOTA: verifica que estas dentro de el directorio my_store
+
+```bash
+python manage.py runserver
+```
+
+9. Creamos un archivo dentro de my_store/my_store views.py, esto mas por temas de convencion
+
+ahora si empezar a codificar!!!
