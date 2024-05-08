@@ -92,3 +92,27 @@ def velocidad(distancia, tiempo):
 
 
 print(velocidad(100, 1))
+
+'''
+ Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F.
+'''
+def convertirGrados(grados:int, unidad:str):
+    validate_uni = len(unidad) == 1
+    if unidad.upper() == 'C' and validate_uni:
+        print(f'{grados}ºC = {(int(grados * 9/5) +32)}ºF')
+    elif unidad.upper() == 'F' and validate_uni:
+        print(f'{grados}ºF = {int(grados - 32)*(5/9)}ºC')
+    else:
+        print('El tipo de grados no existe')
+
+#convertirGrados() TypeError
+#convertirGrados('s') TypeError
+#convertirGrados(2) TypeError
+#convertirGrados(2, False) TypeError
+convertirGrados(2, 'jola')
+convertirGrados(2, 'E')
+convertirGrados(0, 'F')
+convertirGrados(100, 'C')
+convertirGrados(32, 'F')
+
+
