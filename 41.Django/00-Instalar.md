@@ -145,4 +145,4 @@ INSTALLED_APPS = [
 ]
 ```
 
-https://codigofacilito.com/videos/renderizar-template-fa7f819b-48a0-4748-9194-decafc91e2de
+https://codigofacilito.com/videos/super-usuario
