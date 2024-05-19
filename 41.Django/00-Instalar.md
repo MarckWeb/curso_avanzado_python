@@ -21,7 +21,7 @@ python3 -m venv <nombre_virtual>
 Por ejemplo:
 
 ```bash
-python3 -m venv env_django
+python -m venv env
 ```
 
 Este comando creará un directorio llamado env_django que contendrá el entorno virtual.
@@ -37,10 +37,10 @@ source env_django/bin/activate
 
 ```bash
 # para windows
-source env_django/scripts/activate
+source env/scripts/activate
 ```
 
-la terminal cambiara el promt a (env_django), indica que se esta trabajando dentro de un entorno virtual.
+la terminal cambiara el promt a (env), indica que se esta trabajando dentro de un entorno virtual.
 
 ## Instalación de Django
 
@@ -51,13 +51,31 @@ la terminal cambiara el promt a (env_django), indica que se esta trabajando dent
 py -m pip install Django==5.0.6
 ```
 
-## Creación de un proyecto con django-admin
-
-7. Crea un nuevo proyecto Django: Utiliza el comando: django-admin startproject <nombre_del_proyecto> para crear un nuevo proyecto Django en el directorio actual.
+o tambien dentro del directorio proyecto crear un archivo requirements.txt con django dentro
 
 ```bash
-django-admin startproject my_store .
+Django
 ```
+
+y luego ejecutas el siguiente comando
+
+```bash
+pip install -r requerimientos.txt
+```
+
+Con este comando, el marco de Django comenzará a descargarse. Una vez finalizada la descarga, podemos empezar a desarrollar la aplicación.
+
+## Creación de un proyecto con django-admin
+
+7. Crea un nuevo proyecto Django: Utiliza el comando:
+   django-admin startproject <nombre_del_proyecto>
+   para crear un nuevo proyecto Django en el directorio actual.
+
+```bash
+django-admin startproject mi_tienda .
+```
+
+se creara un directorio con el nombre indicado dentro del directorio raiz
 
 - Importante-. El punto final del comando es importante. Indica a django-admin que use la carpeta actual. Si deja fuera este punto final, se creará un subdirectorio adicional.
 
@@ -144,6 +162,3 @@ INSTALLED_APPS = [
     'my_app.apps.MyAppConfig', # agregar linea
 ]
 ```
-
-https://codigofacilito.com/videos/super-usuario
-https://learn.microsoft.com/es-es/training/modules/django-models-data/6-manage-database

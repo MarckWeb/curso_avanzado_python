@@ -2,6 +2,7 @@
 # realizamos la operacion dentro de los parentesis, pero tambien vemos que dentro de los parentesis hay division entera que se realiza la operacion antes de las sumas y restas
 
 operacion = (3+5//4-2)-2**4+3*(7-2)
+
 desglose_parentesis = (3+1-2)-2**4+3*5
 desglose_parentesis = 2-2**4+3*5
 print(desglose_parentesis)
