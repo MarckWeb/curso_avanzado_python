@@ -37,7 +37,7 @@ source env_django/bin/activate
 
 ```bash
 # para windows
-source env/scripts/activate
+source ./venv/bin/activate
 ```
 
 la terminal cambiara el promt a (env), indica que se esta trabajando dentro de un entorno virtual.
