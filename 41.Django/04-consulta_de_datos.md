@@ -40,3 +40,33 @@ categoria.save()
 Producto(nombre="Laptop Acer", descripcion="Laptop potente y confiable para trabajo", precio=799.99, stock=10, categoria=categoria).save()
 Producto(nombre="Laptop Dell", descripcion="Laptop versátil", precio=899.99, stock=5, categoria=categoria).save()
 ```
+
+Tener en cuenta que no hemos configurado una variable local para cada instancia Producto. Dado que no se reutilizarán los objetos, no es necesario establecerlos en una variable.
+
+## Recuperación de objetos
+
+recuperar todos los productos
+
+```python
+categoria.producto_set.all()
+```
+
+salida
+
+```bash
+<QuerySet [<Producto: Laptop Acer>, <Producto: Laptop Dell>]>
+```
+
+La función get devolverá solo un objeto. Puede pasar parámetros a get para proporcionar una cadena de consulta. Aquí usamos pk, que es una palabra clave especial para indicar la clave principal. El resultado devuelto será:
+
+```python
+<Producto: Laptop Acer>
+```
+
+Recupere todos los perros del refugio de demostración mediante filter tal como se muestra en el comando siguiente:
+
+```python
+productos_teclado = Producto.objects.filter(categoria__nombre='Teclado')
+```
+
+Al igual que get, filter nos permite pasar una consulta en los parámetros. Observe que podemos usar dos caracteres de subrayado para ir de propiedad en propiedad. Dado que queremos encontrar todos los productos de la categoria denominado teclado, usamos categorianombre para acceder a la propiedad nombre categoria. El resultado devuelto será todos los ordenadores, porque solo tenemos una categoria.
