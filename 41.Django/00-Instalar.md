@@ -75,17 +75,15 @@ Con este comando, el marco de Django comenzará a descargarse. Una vez finalizad
 django-admin startproject mi_tienda .
 ```
 
-se creara un directorio con el nombre indicado dentro del directorio raiz
-
 - Importante-. El punto final del comando es importante. Indica a django-admin que use la carpeta actual. Si deja fuera este punto final, se creará un subdirectorio adicional.
 
-Verificamos dentro del directorio creado my_store, y vemos que se ha creado un directorio con el mismo nombre y un archivo manage.py
+Verificamos dentro del directorio creado mi_tienda, y vemos que se ha creado un directorio con el mismo nombre y un archivo manage.py
 
 ### Exploración de la estructura del proyecto
 
 ```bash
 manage.py
-my_store/
+mi_tienda/
     __init__.py
     asgi.py
     settings.py
@@ -95,7 +93,7 @@ my_store/
 
 ### Archivos Principales de un Proyecto Django
 
-- 7.0. my_store: helloproject se considera como el paquete de Python para el proyecto.
+- 7.0. mi_tienda: helloproject se considera como el paquete de Python para el proyecto.
 
 - 7.1. init.py: es un archivo vacío que funciona para indicar a Python que este directorio se debe considerar como un paquete.
 
@@ -115,22 +113,24 @@ NOTA: verifica que estas dentro de el directorio my_store
 python manage.py runserver
 ```
 
-9. Creamos un archivo dentro de my_store/my_store views.py, esto mas por temas de convencion
+9. Creamos un archivo dentro de mi_tienda/views.py, esto mas por temas de convencion
 
 con este ultimo paso creamos un proyecto de django
 
-## Creación de la aplicación my_app
+## Creación de la aplicación mi_aplicacion
+
+Hemos descubierto los aspectos básicos sobre el marco de Django y examinado la estructura de carpetas de nuestro proyecto. Ahora es el momento de crear nuestra primera aplicación. La aplicación ¡mi_aplicacion! permitirá comprender cómo se crean las aplicaciones y cómo funcionan al unísono con el proyecto de Django.
 
 dentro del mismo directorio de my_store ejecutar el siguiente comando:
 
 ```bash
-python manage.py startapp my_app
+python manage.py startapp mi_aplicacion
 ```
 
 Con este comando, Django crea las carpetas y los archivos necesarios, y la estructura siguiente ahora debería estar visible.
 
 ```bash
-my_app/
+mi_aplicacion/
     __init__.py
     admin.py
     apps.py
@@ -159,6 +159,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'my_app.apps.MyAppConfig', # agregar linea
+    'mi_aplicacion.apps.MiAplicacionConfig', # agregar linea
 ]
 ```
