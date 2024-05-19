@@ -2,38 +2,55 @@
 
 El primer paso para desarrollar una aplicación en Django es definir los modelos, que representan la estructura de datos de la aplicación. Los modelos se definen en un archivo llamado `models.py` dentro de cada aplicación de Django.
 
-### Ejemplo de modelos de refugio de perros:
+### Ejemplo de modelos de mi_tienda:
 
-En el archivo `models.py`, definimos dos clases de Python para representar nuestros modelos:
+En el archivo `models.py` de mi aplicacion, definimos dos clases de Python para representar nuestros modelos:
 
 ```python
-# Create your models here
-class Refugio(models.Model):
-    nombre = models.CharField(max_length=200)
-    ubicacion = models.CharField(max_length=200)
+# Crear los modelos
+
+class Categoria(models.Model):
+    nombre = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=200)
+
     def __str__(self):
         return self.nombre
 
-class Perro(models.Model):
-    refugio = models.ForeignKey(Refugio, on_delete=models.PROTECT)
+
+class Producto(models.Model):
     nombre = models.CharField(max_length=200)
     descripcion = models.TextField()
-    fecha_ingreso = models.DateTimeField(auto_now_add=True)
+    precio = models.DecimalField(max_digits=10, decimal_places=2)
+    stock = models.PositiveIntegerField()
+    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
+
     def __str__(self):
         return self.nombre
 ```
 
-Aquí, Refugio representa un lugar donde se alojan los perros, y Perro representa un perro en particular. Observe la relación entre Perro y Refugio: un refugio puede tener muchos perros, pero un perro solo puede estar en un refugio a la vez.
+Aquí, categoria representa donde pertenece el producto, y Producto representa al producto. Observe la relación entre Categoria y producto: una categori puede tener muchos productos, pero un producto solo puede estar en una categoria a la vez.
 
 ## Registro del modelo:
 
 Después de definir los modelos, debemos registrar la aplicación en el archivo settings.py del proyecto para que Django la reconozca. Esto se hace agregando el nombre de la aplicación al INSTALLED_APPS.
 
+1. verificamos que dentro de mi_aplicacion/apps.py la clase tenga el nombre de MiAplicacionConfig
+
+```py
+from django.apps import AppConfig
+
+
+class MiAplicacionConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'mi_aplicacion'
+```
+
+2. Abrimos setting.py de mi_tienda y agregamos la ruta
+
 ```py
 # settings.py
 INSTALLED_APPS = [
-    'dog_shelters.apps.DogSheltersConfig',
-    'dog_shelters.apps.DogSheltersConfig',
+    'mi_aplicaccion.apps.MiAplicacionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,6 +1,6 @@
 # Desarrollo de modelos
 
-En un proyecto web, el desarrollo de modelos es fundamental. Un modelo en Python es simplemente una clase que define la estructura de los datos que tu aplicación utilizará y cómo se almacenarán en la base de datos. En esta clase, especificas los campos o atributos que deseas tener en tu base de datos. Cada campo representa una columna en la tabla de la base de datos. Por ejemplo, podrías tener un modelo llamado 'Producto' con campos como 'nombre', 'precio' y 'descripción'. Estos modelos son esenciales para garantizar que tus datos se almacenen de manera organizada y puedan ser fácilmente accedidos y manipulados por tu aplicación.
+En un proyecto web, el desarrollo de modelos es fundamental. Un modelo en Python es simplemente una clase que define la estructura de los datos que la aplicación utilizará y cómo se almacenarán en la base de datos. En esta clase, especificas los campos o atributos que deseas tener en tu base de datos. Cada campo representa una columna en la tabla de la base de datos. Por ejemplo, podrías tener un modelo llamado 'Producto' con campos como 'nombre', 'precio' y 'descripción'. Estos modelos son esenciales para garantizar que tus datos se almacenen de manera organizada y puedan ser fácilmente accedidos y manipulados por tu aplicación.
 
 ## Creación de un modelo
 
