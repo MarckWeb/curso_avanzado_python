@@ -146,3 +146,4 @@ INSTALLED_APPS = [
 ```
 
 https://codigofacilito.com/videos/super-usuario
+https://learn.microsoft.com/es-es/training/modules/django-models-data/6-manage-database
