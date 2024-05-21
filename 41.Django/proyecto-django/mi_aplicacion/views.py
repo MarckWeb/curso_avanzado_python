@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from . import models
-from django.http import HttpResponse
 
 
 def categoria_lista(request):
-    categoria = models.Categoria.objects.all()
-    contexto = {'categotia': categoria}
+    categorias = models.Categoria.objects.all()  # Obtén todas las categorías
+    # Nombre de la clave debe ser 'categorias'
+    contexto = {'categorias': categorias}
     return render(request, 'lista_categoria.html', contexto)
 
 

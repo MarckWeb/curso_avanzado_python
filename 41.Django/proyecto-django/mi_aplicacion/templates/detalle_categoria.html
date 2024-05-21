@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Detalles de la Categoría
+{% endblock %}
+
+{% block content %}
+<h2>{{ categoria.nombre }}</h2>
+<div>Descripción: {{ categoria.descripcion }}</div>
+{% if categoria.producto_set.all %}
+<div>Lista de productos de la categoria {{categoria.nombre}}:</div>
+{% for prod in categoria.producto_set.all %}
+<div>
+   <a href="">
+      {{ prod.nombre }}
+   </a>
+</div>
+{% endfor %}
+</div>
+{% else %}
+<div>Esta categoría no tiene productos aún.</div>
+{% endif %}
+{% endblock %}

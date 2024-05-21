@@ -1,7 +1,5 @@
 from django.db import models
 
-# Crear los modelos
-
 
 class Categoria(models.Model):
     nombre = models.CharField(max_length=100)

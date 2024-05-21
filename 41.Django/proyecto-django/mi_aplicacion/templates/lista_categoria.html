@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Lista de Categorías
+{% endblock %}
+
+{% block content %}
+<h2>Lista de Categorías</h2>
+<div>Esta es la lista de categorías registradas</div>
+{% for categoria in categorias %}
+<div>
+   <a href="{% url 'categoria_detalle' categoria.pk %}">
+      {{ categoria.nombre }}
+   </a>
+</div>
+{% endfor %}
+{% endblock %}
