@@ -11,7 +11,7 @@ Detalles de la Categoría
 <div>Lista de productos de la categoria {{categoria.nombre}}:</div>
 {% for prod in categoria.producto_set.all %}
 <div>
-   <a href="">
+   <a href="{% url 'producto_detalle' prod.id %}">
       {{ prod.nombre }}
    </a>
 </div>

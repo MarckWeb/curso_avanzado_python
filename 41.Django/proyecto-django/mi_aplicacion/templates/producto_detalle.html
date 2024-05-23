@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block title %}
+{{ producto.nombre }}
+{% endblock %}
+
+{% block content %}
+<h2>{{ producto.nombre }}</h2>
+<div>Acerca del producto{{ producto.nombre }} - {{ producto.descripcion }}</div>
+{% endblock %}
