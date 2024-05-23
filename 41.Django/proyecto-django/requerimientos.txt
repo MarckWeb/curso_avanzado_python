@@ -1,2 +1,4 @@
-Django
+django
 django-crispy-forms
+whitenoise
+psycopg2-binary
