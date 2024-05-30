@@ -37,14 +37,17 @@ Debe contener al menos un número.
 No debe contener espacios.
 '''
 
-# 
-password='Testpass1234'
-
+# Definición de la contraseña
+password = "Testpass1234"
+ 
+# Revisión de los criterios
 longitud = len(password) >= 8
-print(longitud)
-caracter = '@' in password or '#' in password
-print(caracter)
-numero = [char for char in longitud]
-print(numero)
-espacios = ' ' in password
-print(espacios)
+caracter = "@" not in password and "#" not in password
+numero = "0" in password or "1" in password or "2" in password or "3" in password or "4" in password or "5" in password or "6" in password or "7" in password or "8" in password or "9" in password
+espacios = " " not in password
+ 
+# Mostramos por pantalla el resultado
+resultado = longitud and caracter and numero and espacios
+ 
+print(f"Contraseña: {password}")
+print(f"¿La contraseña cumple con los criterios establecidos? {resultado}")
