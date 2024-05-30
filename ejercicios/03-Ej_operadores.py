@@ -24,7 +24,6 @@ print(f"La puntuación final es: {puntuacion_final}")
 print(f"¿Participante aprobado?: {participante_aprobado}")
 print(f"¿Distinción de honor?: {distincion_honor}")
 
-
 '''
 EJERCICIO
 Implementa un programa en Python que verifique si una contraseña es segura bajo los criterios que se muestran a continuación. Para ello, utiliza operadores de pertenencia y lógicos.
