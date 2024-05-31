@@ -26,13 +26,10 @@ VARIABLE_STRING = 'mi variable'
 print('----Variable String----')
 print('Variable de tipo string', VARIABLE_STRING)
 
-'''
-   Operaciones con Cadenas: Dada una cadena de al menos 6 letras
-      - imprime el primer y último carácter
-      - Luego crea una subcadena con los caracteres del índice 1 al 3.
- '''
-print('----Ejercicio----')
-CADENA = 'tetras'
-print(CADENA[0], CADENA[5])
-SUB_CADENA = CADENA[1] + CADENA[2] + CADENA[3]
-print(SUB_CADENA)
+
+"""
+NOTA:
+Python no permite concatenar un numero con un string da un error:
+(TypeError: can only concatenate str (not "int") to str), 
+ - La solucion es convertir el numero a str
+"""
