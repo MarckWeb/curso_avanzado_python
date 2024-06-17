@@ -106,6 +106,34 @@ else:
 '''Ejercicio 7
 Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es <imc> donde <imc> es el índice de masa corporal calculado redondeado con dos decimales.'''
 
+def calcularIMC(peso, estatura):
+    if estatura == 0 or peso == 0:
+        return "La estatura no puede ser cero. Por favor, ingrese valores válidos."
+    else:
+        imc = peso / (estatura ** 2)
+        return imc
+
+def interpretarIMC(imc):
+    if imc < 18.5:
+        return "Categoría: Bajo peso"
+    elif 18.5 <= imc < 24.9:
+        return "Categoría: Peso normal"
+    elif 25 <= imc < 29.9:
+        return "Categoría: Sobrepeso"
+    else:
+        return "Categoría: Obesidad"
+
+peso = float(input('Introduce tu peso en kilogramos: '))
+estatura = float(input('Introduce tu estatura en metros: '))
+imc = calcularIMC(peso, estatura)
+
+# objeto que verifica el tipo de salida de imc si number o string
+if isinstance(imc, str):
+    print(imc) 
+else:
+    print(f"Tu IMC es: {imc:.2f}")
+    print(interpretarIMC(imc))
+
 
 '''Ejercicio 8
 Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la <n> entre <m> da un cociente <c> y un resto <r> donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.'''
