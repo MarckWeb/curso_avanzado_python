@@ -6,21 +6,17 @@ Una variable en Python es un espacio reservado en la memoria que almacena un val
 
 La declaración de variables en Python se realiza de manera dinámica, lo que significa que no es necesario definir explícitamente el tipo de dato que la variable va a almacenar, a diferencia de otros lenguajes de programación como C o Java.
 
-A continuación, se muestra cómo se pueden declarar y asignar variables en Python:
-
 ```py
 numero = 10
 texto = "Hola mundo"
 lista = [1, 2, 3]
 ```
 
-En este caso, _numero_ es una variable que almacena un entero _(10)_, _texto_ es una variable que almacena una cadena de caracteres _("Hola mundo")_, y lista es una variable que almacena una _lista_ de enteros _([1, 2, 3])_.
-
 ## Tipos de datos
 
-Python es un lenguaje de programación dinámico y fuertemente tipado. Esto significa que, aunque no es necesario declarar explícitamente el tipo de dato que una variable va a almacenar, cada variable tiene un tipo y Python realiza comprobaciones de tipo en tiempo de ejecución. Los tipos de datos básicos en Python incluyen enteros, flotantes, cadenas y booleanos.
+Python es un lenguaje de programación dinámico y fuertemente tipado. Esto significa que, aunque no es necesario declarar explícitamente el tipo de dato que una variable va a almacenar, cada variable tiene un tipo y Python realiza comprobaciones de tipo en tiempo de ejecución.
 
-Por ejemplo:
+Los tipos de datos básicos en Python incluyen enteros, flotantes, cadenas y booleanos.
 
 ```py
 entero = 1 # Tipo entero
