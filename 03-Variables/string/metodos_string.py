@@ -33,6 +33,9 @@ print(animal.lstrip())
 # rstrip()-. quita el espacio de la izquierda de la letra
 print(animal.rstrip())
 
+# split()-. convierte un string en array, acepta dos parametros ("", 1)
+print(animal.split())
+
 # find('gr')-. devuleve el index de su ubicacion del carcater, si se pasa una letra, encuentra el primer caracter y se pasa una letra muestra su index
 print(animal.find('gr'))
 print(animal.find('r'))
