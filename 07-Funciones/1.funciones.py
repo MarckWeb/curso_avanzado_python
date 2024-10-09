@@ -57,3 +57,15 @@ def suma(a, b):
 
 
 print(suma(10, 20))
+
+# Globals
+
+# si dntro de una funcion se usa globals si que se puede cambiar la variable global dentro de la funcion
+x = 10
+def numero():
+    globals
+    x = 11
+    return x
+
+print(numero())
+print(x)

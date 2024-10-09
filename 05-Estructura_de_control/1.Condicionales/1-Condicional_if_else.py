@@ -5,8 +5,6 @@ hora = 10
 if hora == 15 :
     print("La clase ha terminado")
     
-
-
 # condicional con alternativa
 # si se cumple la condicion :
 #   se ejecuta este bloque
@@ -17,7 +15,6 @@ if hora == 15 :
 else :
     print("Lo siento, todavia estamos en clase")
     
-
 # condicional anidado
 # si se cumple la condicion :
 #   se ejecuta este bloque
