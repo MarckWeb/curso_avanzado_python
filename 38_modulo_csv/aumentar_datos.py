@@ -3,6 +3,8 @@ import csv
 # Agregar más contenido al archivo CSV
 with open('contactos.csv', 'a', newline='') as contactoscsv:
     escribir = csv.writer(contactoscsv, delimiter=',')
+
+    
     # Escribir nuevas filas
     escribir.writerow([6, "Altavoces", 79.99])
     escribir.writerow([7, "Webcam", 39.50])
@@ -13,3 +15,10 @@ with open('contactos.csv', newline='') as empleadoscsv:
     for item in datos:
         print(item)
     print('-' * 50)
+
+def verify_win():
+    file = open('contactos.csv','r').readlines()
+    return len(file)
+
+print(verify_win())
+

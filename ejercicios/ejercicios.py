@@ -1,5 +1,18 @@
 '''1.- Escribe un programa que pida primero un número par y luego un número impar (positivos o negativos). En caso de que uno o los dos valores no sea correcto, se mostrará un único aviso.'''
 
+def input_par_impar():
+    par = int(input('Introduce un numero par: '))
+    impar = int(input('Introduce un numero impar: '))
+    print(par % 2)
+    print(impar % 3)
+
+    if par % 2 != 0 and impar % 3 != 0:
+        print(f'el numero par es: {par}, el numero impar es: {impar}')
+    else:
+        print('felicidades acertado!!!')
+input_par_impar()
+
+
 '''2.- Escribe un programa que pida primero un número par (positivo o negativo) y si el valor no es correcto, muestre un aviso. Si el valor es correcto, pedirá un número impar (positivo o negativo) y si el valor no es correcto, mostrará un aviso.'''
 
 def obtener_numero_par():
@@ -157,3 +170,4 @@ Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día 
 '''mas ejercicios'''
 #https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
 # https://www.mclibre.org/consultar/python/
+
